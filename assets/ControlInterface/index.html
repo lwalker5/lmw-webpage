@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" manifest="cache.manifest">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="viewport" content="user-scalable=no, width=device-width"/>
+<title>Welcome!</title>
+<link rel="apple-touch-icon" href="assets/Icon.png"/>
+<link href="assets/styles.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+function MM_goToURL() { //v3.0
+  var i, args=MM_goToURL.arguments; document.MM_returnValue = false;
+  for (i=0; i<(args.length-1); i+=2) eval(args[i]+".location='"+args[i+1]+"'");
+}
+</script>
+<link href="aller.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript">
+	function BlockMove(event) {
+	event.preventDefault();
+	}
+</script>
+</head>
+
+<body ontouchmove="BlockMove(event);">
+
+<div class="container">
+	<div class="empty">
+    <div class="loginlogo"><a href="../../paramount.html"><img src= "assets/logo.png" width="75px"/></a></div>
+  </div>
+  <div class="login">
+    <span class="heading"><a onclick="parent.location='index.html'">Welcome to the Camvac!<br /></a></span> 
+    <!--<a onclick="parent.location='main_menu.html'" class="button red">Main Menu</a>
+    <h1><a onclick="parent.location='part_manager.html'">Part Manager</a></h1>
+    <br /><br />-->	
+   <span class="subheading"> Employee ID : </span><input name="LoginInput" class="ffields" type="text" value="" size="7 " maxlength="7" />
+     <form action="" method="get">
+     <br />
+	<input name="start" class="OKbutton red" type="button" onclick="MM_goToURL('parent','part_manager.html');return document.MM_returnValue" value="LOGIN"/>
+  </form>
+  <br /> <br />
+  <a href="assets/Scenario2.pdf"><img src="assets/paper.png" /></a><span class="subheading">&nbsp; <a href="assets/Scenario2.pdf">Documentation</a></span>
+  </div>
+  <!-- end .container -->
+</div>
+</body>
+</html>

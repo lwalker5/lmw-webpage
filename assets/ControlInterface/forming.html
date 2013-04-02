@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="viewport" content="user-scalable=no, width=device-width"/>
+<title>Forming</title>
+<link href="assets/styles.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+function MM_goToURL() { //v3.0
+  var i, args=MM_goToURL.arguments; document.MM_returnValue = false;
+  for (i=0; i<(args.length-1); i+=2) eval(args[i]+".location='"+args[i+1]+"'");
+}
+</script>
+
+<script type="text/javascript">
+	function BlockMove(event) {
+	event.preventDefault();
+	}
+</script>
+</head>
+
+<body ontouchmove="BlockMove(event);">
+<div class="container">
+  <div class="header">
+    <div class="preprocess"> <span class="heading2">Preprocess</span> </div>
+    <div class="preprocess2"> <span class="headingoff">1 Part Manager</span> </div>
+    <div class="preprocess2"> <span class="headingoff">2 Tech Select</span> </div>
+    <div class="preprocess2"> <span class="headingon">3 Forming</span> </div>
+    <!--<h1><a onclick="parent.location='index.html'">Log In</a></h1> 
+    <h1><a onclick="parent.location='main_menu.html'">Main Menu</a></h1>
+    <h1><a onclick="parent.location='part_manager.html'">Part Manager Screen</a></h1> --> 
+  </div>
+  <div id="formingheadingleft"><span class="formingbig">Cycle</span></div>
+  <div class="formingheading"><span class="formingbig"></span></div>
+  <div class="formingheading"><span class="formingbig">Platen</span></div>
+  <div class="formingheading"><span class="formingbig">Cycle Count</span></div>
+  <div class="formingcycle"></div>
+  <div class="formingtable">
+  <table style="margin-top:0" cellpadding="0" width="390"> 
+  	<tr> <td width="165"> <span class="formingsmall">Heat Duration</span></td>
+    	 <td width="82"><input name="LoginInput" class="ffields" type="text" value="200" size="7 " maxlength="7" /></td>
+         <td width="107"><input name="LoginInput" class="ffields" type="text" value="0" size="7 " maxlength="7" /></td>
+         <br />
+    </tr>
+    <tr> <td width="165"> <span class="formingsmall">Form Duration</span></td>
+    	 <td width="82"><input name="LoginInput" class="ffields" type="text" value="200" size="7 " maxlength="7" /></td>
+         <td width="107"><input name="LoginInput" class="ffields" type="text" value="51" size="7 " maxlength="7" /></td>
+         <br />
+    </tr>
+    <tr> <td width="165"> <span class="formingsmall">Vacuum Delay</span></td>
+    	 <td width="82"><input name="LoginInput" class="ffields" type="text" value="0" size="7 " maxlength="7" /></td>
+         <td width="107"><input name="LoginInput" class="ffields" type="text" value="0" size="7 " maxlength="7" /></td>
+         <br />
+    </tr>
+    <tr> <td width="165"> <span class="formingsmall">Vac Bleed Dur</span></td>
+    	 <td width="82"><input name="LoginInput" class="ffields" type="text" value="3" size="7 " maxlength="7" /></td>
+         <td width="107"><input name="LoginInput" class="ffields" type="text" value="3" size="7 " maxlength="7" /></td>
+         <br />
+    </tr>
+    <tr> <td width="165"> <span class="formingsmall">Fan Delay</span></td>
+    	 <td width="82"><input name="LoginInput" class="ffields" type="text" value="10" size="7 " maxlength="7" /></td>
+         <td width="107"><input name="LoginInput" class="ffields" type="text" value="10" size="7 " maxlength="7" /></td>
+         <br />
+    </tr>
+    <tr> <td width="165"> <span class="formingsmall">Fan Duration</span></td>
+    	 <td width="82"><input name="LoginInput" class="ffields" type="text" value="200" size="7 " maxlength="7" /></td>
+         <td width="107"><input name="LoginInput" class="ffields" type="text" value="30" size="7 " maxlength="7" /></td>
+         <br />
+    </tr>
+    <tr> <td width="165" height="52"> <span class="formingsmall">Eject Duration</span></td>
+       <td width="82"><input name="LoginInput" class="ffields" type="text" value="6" size="7 " maxlength="7" /></td>
+         <td width="107"><input name="LoginInput" class="ffields" type="text" value="0" size="7 " maxlength="7" /></td>
+         <br />
+    </tr>
+    <tr> <td width="165" height="52"> <span class="formingsmall">Top Close Dly</span></td>
+       <td width="82"><input name="LoginInput" class="ffields" type="text" value="5" size="7 " maxlength="7" /></td>
+         <td width="107"><input name="LoginInput" class="ffields" type="text" value="5" size="7 " maxlength="7" /></td>
+         <br />
+    </tr>
+    <tr> <td width="165" height="52"> <span class="formingsmall">Btm Open Dly</span></td>
+       <td width="82"><input name="LoginInput" class="ffields" type="text" value="15" size="7 " maxlength="7" /></td>
+         <td width="107"><input name="LoginInput" class="ffields" type="text" value="15" size="7 " maxlength="7" /></td>
+         <br />
+    </tr>
+ </table>
+  </div>
+  <div class="formingblock"><img src="assets/Platen.png" width="228" height="165" align="right"/></div>
+  <div class="formingblock"><img src="assets/cycle.png" /></div>
+  <div class="formingheading"><span class="formingbig">Core Pull</span></div>
+  <div class="formingheading"><span class="formingbig">Spray Mist</span></div>
+  <div class="formingblock">
+  	<div class="formingtextblock"><span class="formingsmall">Delay</span>
+      	<input name="LoginInput" class="sfields" type="text" value="0" size="3 " maxlength="4" />
+  		<input name="LoginInput" class="sfields" type="text" value="0" size="3 " maxlength="4" /><br />  
+  		<span class="formingsmall">Dur&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    	<input name="LoginInput" class="sfields" type="text" value="0" size="3 " maxlength="4" />
+  		<input name="LoginInput" class="sfields" type="text" value="0" size="3 " maxlength="4" /><br />
+  	</div>
+    </div>
+  <div class="formingblock">
+  	<div class="formingtextblock"><span class="formingsmall">Delay</span>
+      	<input name="LoginInput" class="sfields" type="text" value="0" size="3 " maxlength="4" />
+  		<input name="LoginInput" class="sfields" type="text" value="0" size="3 " maxlength="4" /><br />  
+  		<span class="formingsmall">Dur&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    	<input name="LoginInput" class="sfields" type="text" value="0" size="3 " maxlength="4" />
+  		<input name="LoginInput" class="sfields" type="text" value="0" size="3 " maxlength="4" /><br />
+    </div>
+  </div>
+  <div class="formingtech"><span class="formingbig">Technique: 7 Snap Back From Bottom</span></div>
+  <div class="ok">
+    <input name="start" class="OKbutton red" type="button" onclick="MM_goToURL('parent','ready.html');return document.MM_returnValue" value="OK"/>
+  </div>
+  <div class="back">
+    <input name="start" class="backbutton red" type="button" onclick="MM_goToURL('parent','technique.html');return document.MM_returnValue" value="Back"/>
+  </div>
+  <!-- end .container --></div>
+</body>
+</html>
