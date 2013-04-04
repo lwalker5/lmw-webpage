@@ -242,6 +242,21 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 	float:left;
 	height:30px;
 	margin-left:10px;
+	width: 370px;
+}
+
+#gitblock{
+	margin-top:15px;
+	float:left;
+	height:72px;
+
+}
+
+#gittext{
+	margin-top:20px;
+	float:left;
+	height:30px;
+	margin-left:10px;
 }
 
 #thumbnails{
