@@ -1,0 +1,315 @@
+@charset "UTF-8";
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background: #30261C;
+	margin: 0;
+	padding: 0;
+	color: #FFF;
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0px;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 0px;
+	padding-left: 0px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+<!--a:link {
+	text-decoration: none; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+	border-bottom-style:none;
+	border-bottom-width:medium;
+	border-bottom-color:#FFF;
+	color:#0B8185;
+}
+
+/* ~~ this fixed width container surrounds all other elements ~~ */
+.container1 {
+	width: 960px;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+	
+	}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+
+	
+.content1 {
+	padding: 0px;
+	background-color:#30261C;
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the overflow:hidden on the .container is removed */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+
+.empty {
+	float: left;
+	height: 75px;
+	width: 960px;
+}
+
+.intro {
+	float: left;
+	height: 200px;
+	width: 424px;
+	margin-left: 269px;
+	margin-top: 50px;
+}
+
+#logo {
+	background-color:#30261C;
+	margin-top:56px;
+	height: 60px;	
+	color:#FFF;
+	float:left;
+	margin-left:36px;
+	
+}
+
+#myPhoto {
+	background-color:#FC0;
+	width: 80px;
+	height: 90px;
+	float:left;
+	margin-left:190px;
+}
+
+#nameZone {
+	height: 95px;
+	width: 154px;
+	float:left;
+	color:#FFF;
+    margin-left:33px;
+}
+
+#navigation {
+	height: 60px;
+	width: 424px;
+	float:left;
+	margin-top:56px;
+}
+
+#abouttext{
+	width:424px;
+	margin-left:36px;
+	margin-top:0px;
+	float:left;
+}
+
+#aboutme {
+	height:47px;
+	width: 110px;
+	float:left;
+}
+
+#aboutmeon {
+	height:47px;
+	width: 110px;
+	float:left;
+	background-image:url(tab1.png);
+}
+
+#resume {
+	height:47px;
+	width: 100px;
+	float:left;
+}
+
+#resumeon {
+	height:47px;
+	width: 100px;
+	float:left;
+	background-image:url(resumetab.png);
+}
+
+#portfolio {
+	height:47px;
+	width:115px;
+	float:left;
+}
+
+#portfolioon {
+	height:47px;
+	width:115px;
+	float:left;
+	background-image:url(portfoliotab.png);
+}
+
+#contact {
+	height:47px;
+	width:99px;
+	float:left;
+}
+
+
+#contacton {
+	height:47px;
+	width:99px;
+	float:left;
+	background-image:url(contacttab.png);
+}
+
+#contactinfo {
+	height:400px;
+	width:400px;
+	float:left;
+	margin-left:500px;
+}
+
+#contactinfo a:hover{
+	border-bottom-style:none;
+	opacity:0.6;
+}
+
+#bar{
+	height:11px;
+	width: 424px;
+	float:left;
+	background-image:url(bar.png)
+}
+
+#left{
+	height:450px;
+	width:424px;
+	margin-left:36px;
+	float:left;
+}
+
+#right{
+	height:475px;
+	width:430px;
+	margin-left:36px;
+	margin-right:31px;
+	float:left;
+}
+
+.resheading{
+	height:43px;
+}
+
+#skills{
+	height:44px;
+	margin-top:50px;
+	width:188px;
+}
+
+#programming{
+	width:212px;
+	float:left;
+}
+
+#design{
+	width:190px;
+	float:left;
+}
+
+#pdf{
+	margin-top:50px;
+	float:left;
+	height:30px;
+}
+
+#pdftext{
+	margin-top:55px;
+	float:left;
+	height:30px;
+	margin-left:10px;
+}
+
+#thumbnails{
+	width:873px; /*873*/
+	height:120px; /*120*/
+	margin-left:36px;
+	margin-right:36px;
+	float:left;
+	overflow: hidden;
+}
+
+#pieceshell{
+	width: 884px;
+	float:left;
+	margin-top: 40px;
+	margin-left: 36px;
+}
+
+#piece{
+	width:424px;
+	float:left;
+}
+
+#pieceinfo{
+	width:424px;
+	margin-left:36px;
+	float:left;
+}
+
+#pieceicons{
+	margin-left:36px;
+	margin-top:10px;
+	float:left;
+}
+
+#headings{
+	margin-top:0px; /*15px*/
+	height:25px;
+}
+
+#drawing{
+	width:298px;
+	float:left;	
+}
+	
+#icon{
+	width:64px;
+	margin-right:25px;
+	float:left;
+	height:75px;
+}
+
+.divider{
+	width:6px;
+	float:left;
+	margin-right:25px;
+}
+
+.label{
+	width:64px;
+	float:left;
+	margin-right:25px;
+}
+
+.common{
+	width:64px;
+	float:left;
+	margin-right:25px;
+}
+
+	
