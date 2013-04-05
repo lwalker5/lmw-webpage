@@ -46,56 +46,6 @@ jQuery(function() {
 
 </script>
 
-
-</head>
-
-<body onload="initLightbox()">
-<div class="container1">
-  <div class="content1">
-    <div id="logo"><a href="index.html"><img src="assets/logo3.png" alt="lmw logo"/></a></div>
-    <div id="navigation">
-    	<div id="aboutme"><center><span class="tabtext"><a href="aboutme.html">About Me</a></span></center></div>
-        <div id="resume"><center><span class="tabtext"><a href="resume.html">Resum&eacute;</a></span></center></div>
-        <div id="portfolioon"><center><span class="currenttabtext"><a href="portfolio.html">Portfolio</a></span></center></div>
-        <div id="contact"><center><span class="tabtext"><a href="contact.html">Contact</a></span></center></div>
-        <div id="bar"></div>
-    </div>
-	<div id="thumbnails">
-       <div class="jMyCarousel">  
-            <ul>  
-                <li><span class="label"><a href="#" onclick="changeHTML('spacecruiser')"><img src="assets/3DLabel.png" width="64" height="100" alt="space cruiser"/></a></span></li>
-                <li><span class="common"><a href="#" onclick="changeHTML('lego')"><img src="assets/LEGO/cheficon.png" width="64" height="75"></a></span></li>
-                <li><span class="common"><a href="#" onclick="changeHTML('drink')"><img src="assets/drink.png" width="64" height="75" alt="hot chocolate"/></a></span></li>
-                <li><span class="label"><a href="#" onclick="changeHTML('bandlink')"><img src="assets/PrintLabel.png" width="64" height="100" alt="bandlink"/></a></span></li>
-                <li><span class="common"><a href="#" onclick="changeHTML('futura')"><img src="assets/Futura/FuturaIcon2.png" width="64" height="75" alt="futura"/></a></span></li>
-                <li><span class="common"><a href="#" onclick="changeHTML('sixword')"><img src="assets/design4.png" width="64" height="75" alt="six word bio"/></a></span></li>  
-                <li><span class="common"><a href="#" onclick="changeHTML('irish')"><img src="assets/design3.png" width="64" height="75" alt="irish dance logo"/></a></span></li>  
-                <li><span class="label"><a href="#" onclick="changeHTML('picksix')"><img src="assets/webLabel.png" width="64" height="100" alt="pick six"/></a></span></li>
-                <li><span class="common"><a href="#" onclick="changeHTML('mastermind')"><img src="assets/mastermindicon.png" width="64" height="75" alt="mastermind"/></a></span></li>
-                <li><span class="common"><a href="#" onclick="changeHTML('paramount')"><img src="assets/paramounticon2.png" width="64" height="75" alt="paramount plastics"/></a></span></li>
-                <li><span class="label"><a href="#" onclick="changeHTML('female')"><img src="assets/Drawing/drawingLabel.png" width="64" height="100" alt="female drawings"/></a></span></li>
-                <li><span class="common"><a href="#" onclick="changeHTML('male')"><img src="assets/Drawing/drawing2.png" width="64" height="75" alt="male drawings"/></a></span></li>
-                <li><span class="common"><a href="#" onclick="changeHTML('character')"><img src="assets/Drawing/frodoicon.png" width="64" height="75" alt="character portraits"/></a></span></li>
-                <li><span class="common"><a href="#" onclick="changeHTML('edge')"><img src="assets/Drawing/drawing3.png" width="64" height="75" alt="edge quality"/></a></span></li>  
-                <li><span class="common"><a href="#" onclick="changeHTML('arm')"><img src="assets/Drawing/drawingArm2.png" width="64" height="75" alt="arms and legs"/></a></span></li> 
-            </ul>  
-        </div>     
-	</div>
-    <div id="pieceshell">
-        <span class="blueheading">welcome to my portfolio!</span><br/>
-        <span class="pheading">click on an icon to get started</span>
-        <div class="piece">
-        </div>
-        <div class="pieceinfo">
-        	<span class="name"><br /><br /></span>
-        </div> 
-    </div>
-  </div>
-</div>
-
-</body>
-</html>
-
 <script>
 var changeHTML = function(selectedIcon)
 {
@@ -120,7 +70,7 @@ var changeHTML = function(selectedIcon)
             'piece': '<a href="assets/NationalsLogoFinal2.png" rel="lightbox[irish]" title="Nationals Logo">' +
                     '<img src="assets/design3big.png" alt="irish dance logo"/></a>',
             'info': '<span class="name">Irish Dance National Championships Logo<br /><br /></span>' +
-                        '<span class="rbody">This design was for a contest hosted by Irish Dance Magazine for the logo of the Irish Dance Nationals 2012.<br />As an irish dancer and competitor myself, I wanted to emphasize words irish dance, the silhouttes of the dancers, and the host city of Chicago by referencing the Willis tower. The logo was selected as a top 10 winner.</span>'  
+                        '<span class="rbody">This design was for a contest hosted by Irish Dance Magazine for the logo of the Irish Dance Nationals 2012. As an irish dancer and competitor myself, I wanted to emphasize words irish dance, the silhouttes of the dancers, and the host city of Chicago by referencing the Willis tower. The logo was selected as a top 10 winner.</span>'  
         },
 
         'sixword': {
@@ -304,3 +254,53 @@ var changeHTML = function(selectedIcon)
     document.getElementById('pieceinfo').innerHTML = newInfo;
 } 
 </script>
+
+</head>
+
+<body onload="changeHTML('spacecruiser'); initLightbox();">
+<div class="container1">
+  <div class="content1">
+    <div id="logo"><a href="index.html"><img src="assets/logo3.png" alt="lmw logo"/></a></div>
+    <div id="navigation">
+    	<div id="aboutme"><center><span class="tabtext"><a href="aboutme.html">About Me</a></span></center></div>
+        <div id="resume"><center><span class="tabtext"><a href="resume.html">Resum&eacute;</a></span></center></div>
+        <div id="portfolioon"><center><span class="currenttabtext"><a href="portfolio.html">Portfolio</a></span></center></div>
+        <div id="contact"><center><span class="tabtext"><a href="contact.html">Contact</a></span></center></div>
+        <div id="bar"></div>
+    </div>
+	<div id="thumbnails">
+       <div class="jMyCarousel">  
+            <ul>  
+                <li><span class="label"><a href="#" onclick="changeHTML('spacecruiser')"><img src="assets/3DLabel.png" width="64" height="100" alt="space cruiser"/></a></span></li>
+                <li><span class="common"><a href="#" onclick="changeHTML('lego')"><img src="assets/LEGO/cheficon.png" width="64" height="75"></a></span></li>
+                <li><span class="common"><a href="#" onclick="changeHTML('drink')"><img src="assets/drink.png" width="64" height="75" alt="hot chocolate"/></a></span></li>
+                <li><span class="label"><a href="#" onclick="changeHTML('bandlink')"><img src="assets/PrintLabel.png" width="64" height="100" alt="bandlink"/></a></span></li>
+                <li><span class="common"><a href="#" onclick="changeHTML('futura')"><img src="assets/Futura/FuturaIcon2.png" width="64" height="75" alt="futura"/></a></span></li>
+                <li><span class="common"><a href="#" onclick="changeHTML('sixword')"><img src="assets/design4.png" width="64" height="75" alt="six word bio"/></a></span></li>  
+                <li><span class="common"><a href="#" onclick="changeHTML('irish')"><img src="assets/design3.png" width="64" height="75" alt="irish dance logo"/></a></span></li>  
+                <li><span class="label"><a href="#" onclick="changeHTML('picksix')"><img src="assets/webLabel.png" width="64" height="100" alt="pick six"/></a></span></li>
+                <li><span class="common"><a href="#" onclick="changeHTML('mastermind')"><img src="assets/mastermindicon.png" width="64" height="75" alt="mastermind"/></a></span></li>
+                <li><span class="common"><a href="#" onclick="changeHTML('paramount')"><img src="assets/paramounticon2.png" width="64" height="75" alt="paramount plastics"/></a></span></li>
+                <li><span class="label"><a href="#" onclick="changeHTML('female')"><img src="assets/Drawing/drawingLabel.png" width="64" height="100" alt="female drawings"/></a></span></li>
+                <li><span class="common"><a href="#" onclick="changeHTML('male')"><img src="assets/Drawing/drawing2.png" width="64" height="75" alt="male drawings"/></a></span></li>
+                <li><span class="common"><a href="#" onclick="changeHTML('character')"><img src="assets/Drawing/frodoicon.png" width="64" height="75" alt="character portraits"/></a></span></li>
+                <li><span class="common"><a href="#" onclick="changeHTML('edge')"><img src="assets/Drawing/drawing3.png" width="64" height="75" alt="edge quality"/></a></span></li>  
+                <li><span class="common"><a href="#" onclick="changeHTML('arm')"><img src="assets/Drawing/drawingArm2.png" width="64" height="75" alt="arms and legs"/></a></span></li> 
+            </ul>  
+        </div>     
+	</div>
+    <div id="pieceshell">
+        <!--<span class="blueheading">welcome to my portfolio!</span><br/>
+        <span class="pheading">click on an icon to get started</span>-->
+        <div class="piece">
+        </div>
+        <div class="pieceinfo">
+        	<span class="name"><br /><br /></span>
+        </div> 
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+
