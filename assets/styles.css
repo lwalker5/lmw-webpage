@@ -221,13 +221,18 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 	width:188px;
 }
 
-#programming{
-	width:212px;
+#proficient{
+	width:150px;
+	float:left;
+}
+
+#familiar{
+	width:135px;
 	float:left;
 }
 
 #design{
-	width:190px;
+	width:135px;
 	float:left;
 }
 
