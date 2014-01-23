@@ -1,10 +1,17 @@
 @charset "UTF-8";
 body {
-	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	/*font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;*/
+	font: 62.5% Verdana, Arial, Helvetica, sans-serif;
+	line-height: 1.4;
 	background: #30261C;
 	margin: 0;
 	padding: 0;
 	color: #FFF;
+	/*webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	-o-hyphens: auto;
+	hyphens: auto;*/
 }
 
 /* ~~ Element/tag selectors ~~ */
@@ -21,7 +28,13 @@ a img { /* this selector removes the default blue border displayed in some brows
 	border: none;
 }
 /* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
-<!--a:link {
+a {
+	cursor: pointer;
+	color: #FFF;
+}
+
+a:link {
+	color: #FFF;
 	text-decoration: none; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
 }
 a:visited {
@@ -32,148 +45,155 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 	border-bottom-style:none;
 	border-bottom-width:medium;
 	border-bottom-color:#FFF;
-	color:#0B8185;
+	color:#1FAAA6;
+}
+
+input:focus{
+outline:none;
 }
 
 /* ~~ this fixed width container surrounds all other elements ~~ */
-.container1 {
+.wrapper {
 	width: 960px;
 	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
 	
 	}
-
-/* ~~ This is the layout information. ~~ 
-
-1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
-
-*/
-
 	
-.content1 {
-	padding: 0px;
-	background-color:#30261C;
+.main {
+	margin: 3.6em;
 }
 
-/* ~~ miscellaneous float/clear classes ~~ */
-.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
-	float: right;
-	margin-left: 8px;
-}
-.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
-	float: left;
-	margin-right: 8px;
-}
-.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the overflow:hidden on the .container is removed */
-	clear:both;
-	height:0;
-	font-size: 1px;
-	line-height: 0px;
+.inline-block {
+	display: inline-block;
+} 
+
+.vert-align {
+	vertical-align: top;
 }
 
-.empty {
-	float: left;
-	height: 75px;
-	width: 960px;
+.hidden {
+	display: none !important;
+}
+
+/*.desktop_hidden {
+	display: none !important;
+}
+
+.desktop_shown {
+	display: block;
+}
+*/
+.invisible {
+	visibility: hidden;
+}
+
+.one-column-only {
+	display: none;
+}
+
+.no-margins {
+	margin: 0;
 }
 
 .intro {
-	float: left;
-	height: 200px;
-	width: 424px;
-	margin-left: 269px;
-	margin-top: 50px;
+	margin: 0 auto;
 }
+
+h1 {
+	font-family: "UbuntuBold", Helvetica, sans-serif;
+	font-weight: normal;	
+	color:#1FAAA6;
+}
+
+.intro h1 {
+	font-size: 3.1em;
+	line-height: 1em;
+	margin-bottom: 0px;
+}
+
+.intro h3 {
+	font-family: "UbuntuMedium", Helvetica, sans-serif;
+	font-size: 1.9em;
+	font-weight: normal;
+	margin-bottom: 0.1em;
+}
+
+.left p {
+	float: right;
+	margin-right: 36px;
+}
+
+/*.left img {
+	float: right;
+	margin-right: 2.5em;
+}*/
 
 #logo {
-	background-color:#30261C;
-	margin-top:56px;
-	height: 60px;	
-	color:#FFF;
-	float:left;
-	margin-left:36px;
-	
-}
-
-#myPhoto {
-	background-color:#FC0;
-	width: 80px;
-	height: 90px;
-	float:left;
-	margin-left:190px;
-}
-
-#nameZone {
-	height: 95px;
-	width: 154px;
-	float:left;
-	color:#FFF;
-    margin-left:33px;
+	margin-top:2em;
+	display: inline-block;
+	vertical-align: bottom;	
 }
 
 #navigation {
-	height: 60px;
-	width: 424px;
-	float:left;
-	margin-top:56px;
+	/*display: inline-block;*/
+	margin-left: -4px;
 }
 
-#abouttext{
-	width:424px;
-	margin-left:36px;
-	margin-top:0px;
-	float:left;
+.about img {
+	margin-right: 1.5em;
+}
+
+#abouttext {
+	line-height: 1.5;
+	font-size: 1.3em;
+}
+
+.bodytext {
+	font-size:1.4em;
+	font-family: 'UbuntuRegular';
+}
+
+.white_heading {
+	font-family: 'UbuntuMedium';
+	font-size: 1.6em;
 }
 
 #aboutme {
-	height:47px;
 	width: 110px;
 	float:left;
 }
 
-#aboutmeon {
-	height:47px;
+#aboutme.on {
 	width: 110px;
-	float:left;
-	background-image:url(tab1.png);
+	background-image:url(abouttab.png);
 }
 
 #resume {
-	height:47px;
 	width: 100px;
-	float:left;
 }
 
-#resumeon {
-	height:47px;
+#resume.on {
 	width: 100px;
-	float:left;
+	display: inline-block;
 	background-image:url(resumetab.png);
 }
 
 #portfolio {
-	height:47px;
 	width:115px;
-	float:left;
 }
 
-#portfolioon {
-	height:47px;
+#portfolio.on {
 	width:115px;
-	float:left;
 	background-image:url(portfoliotab.png);
 }
 
 #contact {
-	height:47px;
 	width:99px;
-	float:left;
 }
 
 
-#contacton {
-	height:47px;
+#contact.on {
 	width:99px;
-	float:left;
 	background-image:url(contacttab.png);
 }
 
@@ -189,11 +209,15 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 	opacity:0.6;
 }
 
+#github {
+	margin-right: 0em;
+}
+
 #bar{
 	height:11px;
-	width: 424px;
-	float:left;
-	background-image:url(bar.png)
+	width: 432px;
+	background-image:url(bar.png);
+	display: block;
 }
 
 #left{
@@ -211,14 +235,66 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 	float:left;
 }
 
+.resume {
+	font-size: 1.2em;
+	line-height: 1.5;
+}
+
+.rsection {
+	padding: 1.5em 0;
+}
+
+.rsection h2{
+	font-family:'UbuntuMedium';
+	font-weight: normal;
+	font-size: 1.5em;
+}
+
+.rsection img {
+	vertical-align: middle;
+	margin-right: 1em;
+}
+
+.rsection .white_heading {
+	margin-right: 5em;
+	font-size: 1.3em;
+}
+
 .resheading{
 	height:43px;
 }
 
-#skills{
-	height:44px;
-	margin-top:50px;
-	width:188px;
+.rsubheading{
+	color:#1FAAA6;
+	font-family:'UbuntuBold';
+	font-size:1.2em;
+}
+
+.r_exp_entry {
+		padding-bottom: 2em;
+}
+
+.r_exp_entry.last{
+		padding-bottom: 0em;
+}
+
+.ritalic {
+	font-size: 1.1em;
+	font-style: italic;
+}
+
+.demotext {
+	display: block;
+	font-size: 1.3em;
+	font-family: 'UbuntuMedium';
+	margin: 0.75em 0em 0 0;
+}
+
+.skills {
+	display: inline-block;
+	vertical-align: top;
+	width: auto;
+	margin-right: 2.5em;
 }
 
 #proficient{
@@ -236,41 +312,17 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 	float:left;
 }
 
-#pdf{
-	margin-top:50px;
-	float:left;
-	height:30px;
-}
-
-#pdftext{
-	margin-top:55px;
-	float:left;
-	height:30px;
-	margin-left:10px;
-	width: 370px;
-}
-
-#gitblock{
-	margin-top:15px;
-	float:left;
-	height:72px;
-
-}
-
-#gittext{
-	margin-top:20px;
-	float:left;
-	height:30px;
-	margin-left:10px;
-}
-
 #thumbnails{
-	width:873px; /*873*/
-	height:120px; /*120*/
+	width:873px;
+	/*height:120px; 
 	margin-left:36px;
 	margin-right:36px;
 	float:left;
-	overflow: hidden;
+	overflow: hidden;*/
+}
+
+#thumbnails li:hover{
+	cursor: pointer;
 }
 
 #pieceshell{
@@ -283,6 +335,14 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 #piece{
 	width:424px;
 	float:left;
+}
+
+.name {
+	font-family: 'UbuntuMedium';
+	font-size: 1.9em;
+	line-height: 1.2em;
+	display: block;
+	color: #1FAAA6;
 }
 
 #pieceinfo{
@@ -302,22 +362,12 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 	height:25px;
 }
 
-#drawing{
-	width:298px;
-	float:left;	
-}
 	
 #icon{
 	width:64px;
 	margin-right:25px;
 	float:left;
 	height:75px;
-}
-
-.divider{
-	width:6px;
-	float:left;
-	margin-right:25px;
 }
 
 .label{
@@ -332,4 +382,519 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 	margin-right:25px;
 }
 
-	
+.tabtext{
+	font-family: 'UbuntuMedium';
+	font-size:1.8em;
+	padding-left:0px;	
+}
+
+.tabtext a:visited{
+	font-size:19px;
+	padding-left:0px;	
+}
+
+.on a:hover, a:active, a:focus{
+	color: #FFF;
+}
+
+.imgshell {
+	width: 50%;
+	overflow: hidden;
+}
+
+.textshell {
+	width: 45%;
+	vertical-align: top;
+	margin-left: 2em;
+}
+
+.pmedium {
+	display: block;
+	padding-bottom: 2em;
+	padding-top: 0.2em;
+	font-size: 1.3em;
+}
+
+.caption {
+	margin: 1em 0 1.5em 0;
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+
+canvas {
+	display: block;
+	margin: 0 auto;
+}
+
+.arrow {
+	height: 62px;
+	cursor: pointer;
+	position: relative;
+	margin-bottom: -7em;
+}
+
+#l {
+	float: left;
+	left: -25px;
+}
+
+#r {
+	float: right;
+	right: -25px;
+}
+
+.canvas_shell {
+	display: block;
+	margin: 0 auto;
+}
+
+.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+}
+.swipe-wrap {
+  overflow: hidden;
+  position: relative;
+}
+.swipe-wrap > div {
+  float:left;
+  width:100%;
+  position: relative;
+}
+
+.img_and_cap.swipe img {
+	width: 100%;
+}
+
+.contact-icons {
+		display: block;
+		width: 100%;
+		height: 43px;
+	}
+
+.contact-icons li {
+	width: 43px;
+	margin-right: 12px;
+	line-height: 0em;
+	font-size: 0em;
+	display: inline-block;
+}
+
+.contact-icons li a{
+	display: block;
+	height: 43px;
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+}
+
+.contact-icons a {
+	background-size: 43px 43px;
+}
+
+.contact-icons #email a {
+	background-image: url(mobile/mail2x.png);
+	/*background-size: 43px 43px;*/
+}
+
+.contact-icons #email a:hover {
+	background-image: url(mobile/mail_white2x.png);
+}
+
+.contact-icons #facebook a {
+	background-image: url(mobile/facebook2x.png);
+}
+
+.contact-icons #facebook a:hover {
+	background-image: url(mobile/facebook_white2x.png);
+}
+
+.contact-icons #linkedin a {
+	background-image: url(mobile/linkedin2x.png);
+}
+
+.contact-icons #linkedin a:hover {
+	background-image: url(mobile/linkedin_white2x.png);
+}
+
+.contact-icons #twitter a {
+	background-image: url(mobile/twitter2x.png);
+}
+
+.contact-icons #twitter a:hover {
+	background-image: url(mobile/twitter_white2x.png);
+}
+
+.contact-icons #github a {
+	background-image: url(mobile/github2x.png);
+}
+
+.contact-icons #github a:hover {
+	background-image: url(mobile/github_white2x.png);
+}
+
+@media only screen and (min-width: 961px) {
+
+
+	.mobile-only {
+		display: none;
+	}
+
+	.content {
+		margin-top: 7em;
+	}
+
+	.intro {
+		width: 281px;
+	}
+
+	#navigation a {
+		padding-top: 0.5em;
+		display: block;
+		text-align: center;
+	}
+
+	#navigation .inline-block {
+	height: 47px;
+	}
+
+	#aboutheading {
+		margin: 0 2em 0 18em;
+	}
+
+	#abouttext{
+		width: 47%;
+	}
+
+	.left{
+		width: 49%;
+		margin: 0em auto;
+		vertical-align: top;
+	}
+
+	.right {
+		width: 47%;
+		margin-left: 2em;
+	}
+
+	.right .rsection{
+		padding-top: 0;
+	}
+
+	.resume .ritalic {
+		display: inline-block;
+		margin-left: 1em;
+	}
+
+	.rsection.desktop-only {
+		padding-bottom: 0em;
+	}
+
+	.skills .rsubheading {
+		display: block;
+	}
+
+
+	.img_and_cap img {
+		width: 100%;
+	}
+
+	.pieceshell.swipe img {
+	width: 100%;
+	}
+
+	.imgshell {
+		width: 47%;
+		margin-right: 2em;
+	}
+
+	.textshell {
+		width: 48%;
+	}
+
+	.caption.ritalic {
+		font-size: 1.4em;
+		margin-bottom: 0em;
+	}
+
+	canvas {
+		margin-top: 1em;
+	}
+
+	.contact-icons {
+		margin-top: 1em;
+	}
+
+	.contact-icons li {
+		margin-right: 10px;
+		opacity: 0.9;
+	}
+
+}
+
+@media only screen and (max-width: 960px){
+
+	.desktop-only {
+		display: none !important;
+	}
+
+	.wrapper {
+		width: 100%;
+	}
+
+	.main {
+		width: 100%;
+		min-width: 320px;
+		margin: 2em 0;
+	}
+
+	#navigation {
+		width: 100%;
+		margin-top: 13em;
+		margin-left: 0;
+	}
+
+	#navigation .inline-block{
+		height: 100%;
+	}
+
+	#navigation a{
+		width: 93%;
+		display: inline-block;
+		line-height: 2.4em;
+		padding-left: 1.0em;
+	}
+
+	.on {
+		background-color: #0B8185;
+		background-image: none;
+		text-decoration:none;
+		border-bottom-style:none;
+		border-bottom-color:#FFF;
+		color:#FFF;
+	}
+
+	.on a:link {	
+		border-bottom-style:none;
+		border-bottom-color:#FFF;
+	}
+
+	#portfolio.on {
+		box-shadow: 0px 4px 10px #888888;
+	}
+
+
+	.tabtext {
+		text-transform: uppercase;
+		font-family: 'UbuntuBold' !important;
+		width: 100% !important;
+		font-size: 2em;
+	}
+
+	.add-margins {
+		margin: 1em 2em;
+		display: block;
+	}
+
+	.content {
+		margin: 0em !important;
+	}
+
+	.left {
+		width: 100%;	
+	}
+
+	.left p {
+		margin-right: 0;
+	}
+
+	.left img {
+		float: left;
+		margin-right: 2.5em;
+	}
+
+	.blue-line {
+		padding-bottom: 1.5em;
+		border-bottom: 1px solid #0B8185;
+	}
+
+	.end-of-line {
+		margin-right: 0em !important;
+	}
+
+	#bar {
+		width: auto;
+		height: 3px;
+		margin-bottom: 1.5em;
+	}
+
+	#abouttext {
+		width: auto;
+		margin: 1.5em 0em;
+	}
+
+	/*Styles for the header - name + heading + contact icons */
+	.intro {
+		position: absolute;
+		top: 2em;
+		left: 2em;
+		margin: 0;
+		min-width: 280px;
+	}
+
+	.intro h1 {
+		line-height: 0.75em;
+	}
+
+	.intro h3 {
+		/*font-size: 1.6em;*/
+		margin-bottom: 0.4em;
+	}
+
+
+	/*End of header styles*/
+
+	.resume {
+		line-height: 1.5;
+	}
+
+	.rheading {
+		margin-top: 1.5em;
+		font-size: 1.5em;
+		display: block;
+	}
+
+	.ritalic {
+		margin-bottom: 1em;
+		line-height: 1.1em;
+		display: block;
+	}
+
+	.rsection {
+		border-bottom: 1px solid #0B8185; 
+		padding: 1.5em 0em;
+	}
+
+	.rsection h1 {
+		font-size: 1.5em;
+		display: block;		
+	}
+
+	.rsubheading {
+		display: block;
+	}
+
+	.demotext {
+		font-size: 1.2em;
+	}
+
+	.skills {
+		margin-right: 1em;
+	}
+
+	#categories {
+		padding: 0.75em 2em;
+	}
+
+	.pheader {
+		font-size: 1.4em;
+		font-family: 'UbuntuBold';
+		padding-left: 7%;
+		padding-right: 6%;
+		color: #44392F;
+		cursor: pointer;
+	}
+
+	.selected, a:hover.pheader,a:active.pheader,a:visited.pheader {
+		color: #0B8185;
+	}
+
+	.portfolio-header {
+		margin: 0em 0em 2em 0em;
+		background-color: #E2E2E2;
+	}
+
+
+	.pieceshell {
+		/*width: 100%;*/
+		float: none;
+		padding-bottom: 2em;
+		margin: 0 2em 2em;
+		border-bottom: 1px solid #0B8185; 
+	}
+
+	.img_and_cap img {
+		width: 100%;
+	}
+
+	.piece a img {
+		width: 100%;
+	}
+
+	#piece-header {
+		margin: 0 2em 1em 2em;
+	}
+
+	.pieceinfo {
+		margin: 0em 0em 0em 0em;
+		width: auto;
+		text-align: justify; 
+	}
+
+	#proficient {
+		width: auto;
+	}
+}
+
+@media only screen and (max-device-width: 320px) {
+	.arrow {
+		display: none;
+	}
+}
+
+@media (max-device-width: 767px) and (max-device-height: 767px) and (orientation:landscape){
+	#abouttext {
+		font-size: 0.8em;
+	}
+
+	.tabtext {
+		font-size: 1.3em;
+	}
+
+	#navigation a {
+		padding-left: 1.5em;
+	}
+
+	.resume {
+		font-size: 0.7em;
+		font-weight: normal;
+	}
+
+	.pieceinfo {
+		font-size: 1.2em;
+	}
+
+	.skills {
+		font-size: 1.6em;
+	}
+}
+
+@media only screen and (max-width: 479px){
+	.imgshell {
+		width: 100%;
+	}
+
+	.textshell {
+		width: 100%;
+		margin-left: 0;
+		margin-top: 1.5em;
+	}
+
+	.one-column-only {
+		display: block;
+	}
+
+	.two-column-only {
+		display: none
+	}
+}

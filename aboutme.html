@@ -2,18 +2,23 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Lindsay M Walker - About Me</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lindsay M Walker</title>
 <link href="assets/styles.css" rel="stylesheet" type="text/css" />
+<link href="assets/kerning.css" rel="stylesheet" type="text/css" />
 
-<!--for lightbox-->
-<script type="text/javascript" src="assets/lightbox2.05/js/prototype.js"></script>
-<script type="text/javascript" src="assets/lightbox2.05/js/scriptaculous.js?load=effects,builder"></script>
-<script type="text/javascript" src="assets/lightbox2.05/js/lightbox.js"></script>
+<script src="assets/scripts/jquery-1.10.2.min.js"></script>
+<script src="assets/scripts/lettering.js"></script>
+<script type="text/javascript" src="assets/scripts/navigation.js"></script>
+<script type="text/javascript" src="assets/scripts/portfolioscript.js"></script>
+<script type="text/javascript" src="assets/scripts/main.js"></script>
+<script type="text/javascript" src="assets/Swipe-master/swipe.js"></script>
 
-<link rel="stylesheet" href="assets/lightbox2.05/css/lightbox.css" type="text/css" media="screen" />
 <link href="assets/webfontkit-20120324-120456/stylesheet.css" rel="stylesheet" type="text/css" />
 
+
 <script type="text/javascript">
+//Google Analytics
 
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-34231091-1']);
@@ -22,34 +27,175 @@
   (function() {
     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    var s = document.get
   })();
 
 </script>
+
+<link rel="stylesheet" type="text/css" href="assets/jMyCarousel/jMyCarousel.css" /> 
+<script type="text/javascript" src="assets/jMyCarousel/jMyCarousel.js"></script>
+
 </head>
 
 <body>
-<div class="container1">
-  <div class="content1">
-    <div id="logo"><a href="index.html"><img src="assets/logo3.png" alt="lmw logo"/></a></div>
-    <div id="navigation">
-    	<div id="aboutmeon"><center><span class="currenttabtext"><a href="index.html">About Me</a></span></center></div>
-        <div id="resume"><center><span class="tabtext"><a href="resume.html">Resum&eacute; </a></span></center></div>
-        <div id="portfolio"><center><span class="tabtext"><a href="portfolio.html">Portfolio</a></span></center></div>
-        <div id="contact"><center><span class="tabtext"><a href="contact.html">Contact</a></span></center></div>
-        <div id="bar"></div>
+<div class="wrapper">
+  <div class="main">
+    <div id="logo" class="desktop-only"><img src="assets/logo.png" alt="lmw logo"/></div>
+    <div class="intro mobile-only">
+      <h1 class="needs_kerning">lindsay m walker</h1>
+      <h3>Developer + Designer + Dancer</h3>
+      <ul class="contact-icons mobile-only">
+          <li id="email"><a href="mailto:lindsay.m.walker5@gmail.com"></a></li>
+          <li id="facebook"><a href="http://www.facebook.com/lindsay.walker.737"></a></li>
+          <li id="linkedin"><a href="http://www.linkedin.com/in/lindsaymwalker"></a></li>
+          <li id="twitter"><a href="http://www.twitter.com/LiNDsayW1004"></a></li>
+          <li id="github" class="no-margins"><a href="http://www.github.com/lwalker5"></a></li>
+      </ul>
+      <!--<img src="assets/intro.png" alt="lindsay m walker, computer science + graphic design"/>-->
+    </div>   
+    <div id="navigation" class="inline-block">
+      <div id="aboutme" class="inline-block tabtext"><a>About Me</a></div>
+      <div id="resume" class="inline-block tabtext"><a>Resum&eacute;</a></div>
+      <div id="portfolio" class="inline-block tabtext"><a>Portfolio</a></div>
+      <div id="contact" class="desktop-only inline-block tabtext"><a>Contact</a></div>
+      <div id="bar" class="desktop-only"></div>
     </div>
-    <div class="empty"></div>
-    <div id="myPhoto"><img src="assets/mecolor.png" width="88px" height="90px" alt="photo of Lindsay"/></div>
-    <div id="nameZone"> <span class="name">Lindsay M Walker <br /></span> 
-    <span class="schooling">Univ. Notre Dame '12 <br />
-     Computer Science <br />
-     Design <br />
-    </span> </div>
-    <div id="abouttext">
-          <span class="ibody">
-           is a recent graduate of the University of Notre Dame with a BS in Computer Science and a second major in graphic design. She is part engineer, part artist, and determined to incorporate skills from both fields in a career. Lindsay is from Long Island and has returned there having decided the Midwest has too much farmland to be exciting. <br/> <br/> You may say she is a band geek, having loved being a part of the Notre Dame marching band the past four years. During her time in the ND band she made trips to California, Texas, Brazil, England, Italy, France, and Canada and she’d love to keep traveling. Irish dance has been a huge part of her life for the past twelve years. She recently attended the World Championships on a team and is currently training for her seventh National Championships. <br/> <br/> Some of her favorite things are peanut butter, cats, the color turquoise, healthy cooking, film scores, and Game of Thrones. She created this website from scratch herself (shoutout to jMyCarousel and lightbox2 plugins) and hopes you enjoy your visit.</span>
-    </div>    
+    <div id="thumbnails" class="hidden desktop-only">
+      <div class="jMyCarousel">  
+        <ul>  
+            <li><img src="assets/icons/3DLabel.png" id="spacecruiser_icon" class="label" width="64" height="100" alt="space cruiser" data-category="3D"/></li>
+            <li><img src="assets/icons/cheficon.png" id="lego_icon" class="common" width="64" height="75" data-category="3D"></li>
+            <li><img src="assets/icons/drink.png" id="drink_icon" class="common" width="64" height="75" alt="hot chocolate" data-category="3D"/></li>
+            <li><img src="assets/icons/mastermindicon.png" id="mastermind_icon" class="label" width="64" height="100" alt="pick six" data-category="web"/></li>
+            <li><img src="assets/icons/picksix.png" id="picksix_icon" class="common" width="64" height="75" alt="mastermind" data-category="web"/></li>
+            <li><img src="assets/icons/paramounticon.png" id="paramount_icon" class="common" width="64" height="75" alt="paramount plastics" data-category="web"/></li>
+            <li><img src="assets/icons/PrintLabel.png" id="bandlink_icon" class="label" width="64" height="100" alt="bandlink" data-category="print"/></li>
+            <li><img src="assets/icons/FuturaIcon.png" id="futura_icon" class="common" width="64" height="75" alt="futura" data-category="print"/></li>
+            <li><img src="assets/icons/sixwordicon.png" id="sixword_icon" class="common" width="64" height="75" alt="six word bio" data-category="print"/></li>  
+            <li><img src="assets/icons/drawingLabel.png" id="figure_icon" class="label" width="64" height="100" alt="female drawings" data-category="drawing"/></li>
+            <li><img src="assets/icons/technical_icon.png" id="technical_icon" class="common" width="64" height="75" alt="technical drawings" data-category="drawing"/></li>
+            <li><img src="assets/icons/frodoicon.png" id="character_icon" class="common" width="64" height="75" alt="character portraits" data-category="drawing"/></li>
+        </ul>  
+      </div>     
+    </div>
+    <div id="content" class="content" data-active-section="none">
+      <div id="aboutme_content" class="about add-margins hidden">
+        <div id="aboutheading" class="inline-block vert-align">
+          <img src="assets/Small_Lindsay.png" width="88px" height="90px" class="inline-block vert-align" alt="photo of Lindsay"/> 
+          <p class="inline-block vert-align">
+            <span class="white_heading">Lindsay M Walker <br /></span> 
+            <span class="bodytext">Univ. Notre Dame '12 <br />
+            Computer Science <br />
+            Design <br />
+            </span>
+          </p>
+        </div>
+        <div id="abouttext" class="inline-block blue-line">
+          <p>
+          Hello! I'm Lindsay and I'm a front end developer. You've probably noticed that I went to Notre Dame (but here it is again since ND grads love talking about it!) and studied computer science and design. Most recently, I interned at the award winning digital agency R/GA in NYC. For some of my work you can check out my portfolio and github, although the most important piece is actually this website itself which is my own design and development. You can check it out on every device you own (hint responsive).</p>
+          <p>
+          I'd be leaving out a large chunk of my life if I didn't mention irish dance which has been my passion for the past 13 years. In 2013 I attended the World Championships, my 7th Nationals, and my 11th regionals. Additionally, my costumes are my own designs. It truly takes blood, sweat, and tears and I wouldn't be the person I am today without my it. </p>
+          <!--<p>
+          Another of my talents is clarinet playing (although it's gotten a bit rusty lately) and I was lucky enough to be a part of the Band of the Fighting Irish during my time at ND. It was an amazing thrill to play at the football games and have the opportunity to spread music to Brazil, England, France, Italy, Canada, and across the US.</p>-->
+          <p>
+          Some other obsessions at the moment are peanut butter, the color turquoise, cats, attempting to eat large amounts of food for the fewest calories, film scores, and Game of Thrones. If you'd like to contact me you can send me an email at lindsay.m.walker5@gmail.com or visit my various social media accounts. I love tweets!
+          </p>
+        </div>
+      </div> 
+      <div id="resume_content" class = "add-margins hidden">
+        <div class="resume left inline-block">
+            <div class="rsection" style="padding-top: 0;">
+              <h2>Education</h2>
+              <span class="rsubheading">University of Notre Dame '12:</span> 
+              Bachelor of Science in Computer Science, second major in Graphic Design GPA: 3.337
+              <br /><br />
+              <span class="rsubheading">Plainedge High School '08:</span>
+              Salutatorian, Summa Cum Laude, Advanced Regents Diploma
+            </div>
+            <div class="rsection"> 
+              <h2>Skills</h2>
+              <div class="skills">
+                <span class="rsubheading">Proficient</span>
+                HTML/CSS <br />
+                Javascript<br />
+                JQuery<br />
+                C/C++<br />
+                Python
+              </div>
+              <div class="skills"> 
+                <span class="rsubheading">Familiar</span>
+                MySQL<br />
+                PHP
+              </div>
+              <div class="skills end-of-line">
+                <span class="rsubheading">Design</span>
+                Autodesk Maya<br />
+                Illustrator<br/>
+                InDesign<br/>
+                Photoshop<br />
+                Drawing/Sketching<br />
+              </div>
+            </div>
+            <div class="rsection desktop-only">
+              <img src="assets/PDFButton.png" alt="resume pdf"/>
+              <a class = "white_heading" href ="assets/Resume2013.pdf">PDF Version</a>
+            </div>
+            <div class="rsection desktop-only">
+              <img src="assets/gitsmall.png" alt="git logo"/>
+              <a class = "white_heading" href ="https://github.com/lwalker5">GitHub Profile</a>
+            </div> 
+        </div>
+        <div class="resume right inline-block">
+          <div class= "rsection">
+            <h2>Experience</h2>
+            <div class = "r_exp_entry">
+              <span class="rsubheading">R/GA Technology Internship</span>
+              <span class="ritalic">June 2013-August 2013</span>
+              Assisted in the front-end development of responsive mobile and tablet solutions for financial services clients. Additionally, worked with a cross disciplinary team of other interns to plan and present our ideas for a crowd-sourced mobile application that would supplement a public transportation system.
+            </div>
+            <div class = "r_exp_entry">
+              <span class="rsubheading">Competitive and Performance Irish Dance</span>
+              <span class="ritalic">2000–Present</span>
+              Practices daily and attends multiple classes weekly to improve technique. Open championship level in competition. Attended the World Championships in March 2013, her seventh Nationals in July, and regionals in November. Performs regularly with the Inishfree School at local shows.
+            </div>
+            <div class = "r_exp_entry">
+              <span class="rsubheading">Visual Effects Teaching Assistant</span> 
+              <span class="ritalic">January 2012–May 2012 </span>
+              Assisted the students in the 'Technical Concepts of Visual Effects' course with any problems they encountered. Major project areas included modeling, texturing, animation, and compositing.
+            </div>
+            <div class = "r_exp_entry">
+              <span class="rsubheading">Residence Hall Mail Clerk</span> 
+              <span class="ritalic">Fall 2010–May 2012</span>
+              Organized and distributed mail for Farley Hall at Notre Dame.
+            </div>
+            <div class = "r_exp_entry last">
+              <span class="rsubheading">Notre Dame Marching and Concert Bands</span>
+              <span class="ritalic">2008–2012</span>
+              Performed a new show weekly at football games and attended practice daily as a clarinetist. Four year recipient of the shamrock perfect attendance award. Toured with the concert band three summers to Europe, Brazil, and Canada.
+            </div>
+          </div>    
+        </div>
+      </div>
+      <div id="portfolio_content" class="portfolio hidden">
+        <div class="portfolio-header mobile-only">
+          <div id="categories" class="categories"></div>
+        </div>
+        <div id="portfolio_section">
+        </div>
+      </div>
+      <div id="contact_content" class="intro contact desktop-only hidden">
+        <h1 class="needs_kerning">lindsay m walker</h1>
+        <h3>Developer + Designer + Dancer</h3>
+        <h3>lindsay.m.walker5@gmail.com</h3>
+        <ul class="contact-icons">
+          <li id="email"><a href="mailto:lindsay.m.walker5@gmail.comcom"></a></li>
+          <li id="facebook"><a href="http://www.facebook.com/lindsay.walker.737"></a></li>
+          <li id="linkedin"><a href="http://www.linkedin.com/in/lindsaymwalker"></a></li>
+          <li id="twitter"><a href="http://www.twitter.com/LiNDsayW1004"></a></li>
+          <li id="github" class="no-margins"><a href="http://www.github.com/lwalker5"></a></li>
+        </ul>
+      </div>
+    </div> 
   </div>
   <!-- end .container --> 
 </div>

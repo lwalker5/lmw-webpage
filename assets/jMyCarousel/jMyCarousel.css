@@ -19,7 +19,7 @@ div.jMyCarousel .next{
 	background: url('img/right.png') center center no-repeat;
 	width:40px;
 	height:61px;
-	border:0px;
+	border:0px !important;
 	margin-right:20px;
 	margin-top:15px;
 }

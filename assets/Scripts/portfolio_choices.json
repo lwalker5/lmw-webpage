@@ -1,0 +1,173 @@
+{
+
+  "spacecruiser": {
+      "mainimg": "SpaceCruiser",
+      "maintitle": "Genesis leaves Earth on its maiden voyage",
+      "more_imgs": [
+                    { "name":"DigitalModelA.png","caption":"Digital model created in Maya" },
+                    { "name":"BenchmarkImagesA.png", "caption":"Benchmark images"},
+                    { "name":"TrendsA.png", "caption":"Current trends in space travel"},
+                    { "name":"SpaceConceptsA.png", "caption":"Early concepts"},
+                    { "name":"RefinedConceptsA.png", "caption":"Refined concepts"},
+                    { "name":"LimitedOrthoA.png", "caption":"Limited orthographic views"},
+                    { "name":"SpaceCruiserPurpleA.png", "caption":"Genesis makes the jump to light speed"},
+                    { "name":"SpaceExplorationA.png", "caption":"Scout ships are sent out to explore a new planet"},
+                    { "name":"SpaceLandingA.png", "caption":"Scout ships and scientists set out to explore."}
+                   ],
+      "name": "Genesis II: Space Cruiser",
+      "medium": "Design, sketching, rendering",
+      "text": "The year is 2112 and the human race is looking to expand beyond Earth. Despite the mining of nearby asteroids and a multitude of space habitats, natural resources are running low and the population is ever expanding. A group of pioneers travels in search of hospitable planets, resources, and alien life. Their craft is the Genesis II, inspired by marine life, which is capable of acceleration to near light speed. It is equipped with a fleet of scout ships and four larger detachable vessels for more permanent landings. <br> <br> Renderings are done using marker, pastel, and some Photoshop airbrushing."
+  },
+  "bandlink": {
+      "mainimg": "BandlinkLogo",
+      "maintitle": "Can you identify all the musical symbols?",
+      "more_imgs": [{ "name":"BandlinkTee.png", "caption":"Bandlink Monogram featured on t-shirts"}],
+      "name": "Bandlink Logo",
+      "medium": "Print/T-shirt",
+      "text": "Bandlink is a music mentoring program where students from the Notre Dame band tutor young musicians. I designed a Bandlink t-shirt design that was sold to students, parents, and mentors of the program as well as a possible logo. The logo is composed of mainly musical symbols and the t-shirt is a monogram filled with words related to music that young musicians would identify with the blue and gold of ND." 
+  },
+  "irish": {
+      "mainimg": "NationalsLogoFinal2",
+      "maintitle": "Nationals Logo",
+      "more_imgs": [],
+      "name": "Irish Dance National Championships Logo",
+      "medium": "Print (clothing, programs, banners)",
+      "text": "This design was for a contest hosted by Irish Dance Magazine for the logo of the Irish Dance Nationals 2012. As an irish dancer and competitor myself, I wanted to emphasize the words irish dance, the silhouttes of the dancers, and the host city of Chicago by referencing the Willis tower. The logo was selected as a top 10 winner."  
+  },
+  "sixword": {
+      "mainimg": "6word",
+      "maintitle": "Reeses Peanut Butter Cup, anyone?",
+      "more_imgs": [],
+      "name": "Six Word Biography",
+      "medium": "10' by 10' poster", 
+      "text": "The prompt: describe yourself in exactly six words. Obviously I like to eat as evidenced by the 400 point size EAT but right now you are probably thinking about Reeses Peanut Butter Cups which I did not mention at all. The colors may even have more of an impact than the words themselves. I love peanut butter and chocolate. (which also happens to be six words!)"
+  },
+  "futura": {
+      "mainimg": "FuturaFront",
+      "maintitle": "Front cover",
+      "more_imgs": [
+                    {"name":"FuturaA.png", "caption":"Some sample pages - the Futura family"},
+                    {"name":"FuturaB.png", "caption":"Futura is in space!"},
+                    {"name":"FuturaC.png", "caption":"Unique properties"},
+                    {"name":"FuturaD.png", "caption":"Lots of character"},
+                    {"name":"FuturaE.png", "caption":"Only the best font for pizza"},
+                    {"name":"FuturaBack.png", "caption":"Back cover"}
+                   ],
+      "name": "Type Specimen Book: Futura",
+      "medium": "5' by 7' informational book",
+      "text": "This short book presents all you need to know about the typeface Futura. Included are history, characteristics, and notable usages. I chose a bright color scheme and a generally humorous writing style to appeal to a general audience. The book was researched, edited, designed, and bound by myself. As a result of this project I now love Futura.<span class='demotext'><a href='assets/Futura/FullBook.pdf'>The Complete Book PDF</a></span>"
+  },
+  "drink": {
+      "mainimg": "hotChocolate",
+      "maintitle": "Digital Hot Chocolate",
+      "more_imgs": [],
+      "name": "Digital Hot Chocolate",
+      "medium": "CG modeling/texturing",
+      "text": "The goal of the project was to create a CG model of a drink in a transparent container and make it look as real as possible. Using Maya and some reference photos I modeled and textured a glass of hot chocolate (with marshmellows and cinnamon of course!). The scenario: After a long day out in the snow, the viewer is invited to a delicious looking cup of warm cocoa as they look at the window at the mountainside. Rendered using mental ray."
+  },
+  "lego": {
+      "mainimg": "frolic",
+      "maintitle": "LEGO dude is happily frolicking through the fields!",
+      "more_imgs": [
+                  {"name":"bricksterbig.png", "caption":"Brickster is getting away with the pizza"},
+                  {"name":"orthos.png", "caption":"Profile view of the basic model"},
+                  {"name":"rigging.png", "caption":"Joint structure and animation controls"},
+                  {"name":"chef.png", "caption":"A proud chef serving the best pizza in Lego city"}
+                 ],
+      "name": "Digital LEGO characters",
+      "medium": "CG modeling/rigging/texturing",
+      "text": "Creation of digital lego characters to expand knowledge of Maya. Included modeling, rigging, and texturing to prepare characters for animation. It looks like brickster is getting away with the pizza!"
+  },
+  "picksix": {
+      "mainimg": "PickSixExample",
+      "maintitle": "Symbol set learning game",
+      "more_imgs": [
+        {"name":"PickSixSplash.png", "caption":"Splash Page"},
+        {"name":"PickSixProcessA.png", "caption":"Thumbnail concept sketches"},
+        {"name":"PickSixProcessB.png", "caption":"Interface comps"},
+        {"name":"PickSixProcessC.png", "caption":"Color concepts"},
+        {"name":"PickSixProcessD.png", "caption":"Graphic components"}
+       ],
+      "name": "Pick Six",
+      "medium": "Interactive Web App (Design/HTML/CSS)",
+      "text": "This interactive web app is a small game aimed at exploring symbol sets and the resulting positive and negative space. The user creates six symbols which are each composed of a 9 part tappable grid that changes the corresponding shape of the symbol. The game was designed specifically for iPad using HTML, CSS, and some jQuery. The bold color scheme emphasizes the symbols.<span class='demotext'><a href='assets/PickSix/TheGame.html'>Check it out</a></span>" 
+  },
+  "mastermind": {
+      "mainimg": "MastermindB",
+      "maintitle": "A new game on easy mode",
+      "more_imgs": [
+                    {"name":"mastermindA.png", "caption":"Someone cracked the code just in time"},
+                    {"name":"mastermindC.png", "caption":"Hard mode - up for the challenge?"}
+                   ],
+      "name": "Mastermind",
+      "medium": "Interactive Web App (Design and all coding)", 
+      "text": "A redesigned version of the classic code breaking game, Mastermind, in which players attempt to figure out a color combination based on feedback from the code setter which in this case is the computer. Muted greys for the background put on emphasis on the focus of the game, brightly colored spheres. The web app is coded entirely in HTML, CSS, and Javascript and fits perfectly on an iPad screen. A Spotify widget is integrated so you can be inspired by some intense instrumental tunes while you play. See if you can beat the hard mode!<span class='demotext'><a href='assets/mastermind/index.html'>Play the game (Try it on an iPad!)</a></span><span class='demotext'><a href='https://github.com/lwalker5/mastermind'>GitHub</a></span>"
+  },
+  "mysite": {
+      "mainimg" : "SiteDemo",
+      "maintitle" : "Newly redesigned to be responsive",
+      "name": "This website",
+      "medium": "Interactive Portfolio (Design and coding)", 
+      "more_imgs": [],
+      "text": "This started off as a small school project and turned into a way for me to tackle new web technologies and brand myself online. It has been recently updated to be responsive which required a mobile/tablet redesign process and complete overhaul. Technologies used include HTML5 (incl. canvas), CSS, Javascript, JQuery, and JSON as well as the integration and modification of several third party scripts incluing swipe.js, lettering.js, and jMyCarousel."
+  },
+  "paramount": {
+      "mainimg": "MoldingA",
+      "maintitle": "Paramount plastics interface",
+      "more_imgs": [
+                    {"name":"OldInterface.png", "caption":"The interface in need of a user friendly update"},
+                    {"name":"Login.png", "caption":"Login screen"},
+                    {"name":"PartManager.png", "caption":"Step one - part manager"},
+                    {"name":"TechSelect.png", "caption":"Step two - tech select"},
+                    {"name":"Forming.png", "caption":"Step three - forming"},
+                    {"name":"Ready.png", "caption":"Ready to begin - two buttons for safety"},
+                    {"name":"MoldingA.png", "caption":"Status indicator - previously nonexistent"}
+                   ],
+      "name": "Paramount Plastics Interface",
+      "medium": "Interactive Web Prototype (UI/Design/HTML/CSS)", 
+      "text": "Paramount Plastics, a vacuum forming plastic company located in Northern Indiana, was in need of a new control interface for one of their machines. To eliminate problems of readability ease worker stress, and improve productivity my web design class explored an iPad interface. We first visited the company to gather research and then made interactive web app prototypes to present to workers that would potentially use the machines. This is my take on an interface redesign for iPad. The white on dark improves readability and the streamlined process eliminates unnecessary steps and chances of error.<span class='demotext'><a href='assets/Paramount/PresentationComplete.pdf'>View the presentation for the client</a></span><span class='demotext'><a href='https://github.com/lwalker5/control-interface-prototype.git'>GitHub</a></span>"
+  },
+  "figure": {
+      "mainimg": "male1",
+      "more_imgs": [
+                    {"name":"female1.png"},
+                    {"name":"female2.png"},
+                    {"name":"arm1.png"},
+                    {"name":"female3.png"},
+                    {"name":"male2.png"},
+                    {"name":"female4.png"},
+                    {"name":"male3.png"},
+                    {"name":"female5.png"}
+                   ],
+      "name": "Figure Studies",
+      "medium": "Charcoal/Graphite 17' by 24'",
+      "text": "Drawings of the figure both from life and slides with a focus on proportion and edge quality."
+  },
+  "technical": {
+      "mainimg": "technical",
+      "maintitle": "Hairdryer - color on color orthographic",
+      "more_imgs": [
+                    {"name":"technical2.png", "caption":"Limited color orthographic"},
+                    {"name":"technical3.png", "caption":"Speaker - perspective blow-up"},
+                    {"name":"technical4.png", "caption":"Marker and pastel perspective"},
+                    {"name":"technical5.png", "caption":"Only the best font for pizza"},
+                    {"name":"technical6.png", "caption":"Point of reference graphite orthographic"}
+                   ],
+      "name": "Product Drawings",
+      "medium": "Sketching/Rendering",
+      "text": "Technical drawings using a variety of rendering techniques and mediums including pencil, pen, sharpie, pastel, and marker. Samples from redesigns/studies of a drill, hairdryer, desktop speaker, space cruiser, and power tool."
+  },
+  "character": {
+      "mainimg": "Frodo",
+      "maintitle": "Frodo Baggins of the Lord of the Rings",
+      "more_imgs": [
+                    {"name":"Dan.png", "caption":"Dan Stevens of Downton Abbey"},
+                    {"name":"David.png", "caption":"David ARchuleta - American Idol Season 7"},
+                    {"name":"Harry.png", "caption":"Harry Potter"},
+                    {"name":"Merlin.png", "caption":"Merlin (Colin Moran) from the BBC series"}
+                   ],
+      "name": "Character Potraits",
+      "medium": "Graphite 14' by 17'",
+      "text": "Potraits of movie characters and celebrities."
+  }
+} 

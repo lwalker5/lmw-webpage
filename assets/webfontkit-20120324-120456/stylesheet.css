@@ -62,12 +62,7 @@
 
 }
 
-.name {
-	font-family: 'UbuntuMedium';
-	font-size: 19px;
-}
-
-.contact{
+/*.contact{
 	font-family: 'UbuntuMedium';
 	font-size: 16px;
 }
@@ -75,74 +70,17 @@
 .schooling{
 	font-family: 'UbuntuRegular';
 	font-size: 14px;
-}
+}*/
 
-.groupHeading{
+/*.groupHeading{
 	font-family: 'UbuntuMedium';
 	font-size: 14px;
 	color:#049A9D;
-}
+}*/
 
-
-.tabtext a:link{
-	text-decoration:none;
-	color: #FFF;
-	
-}
-
-.tabtext{
-	font-family: 'UbuntuMedium';
-	font-size:19px;
-	padding-left:0px;	
-}
-
-.tabtext a:visited{
-	text-decoration:none;
-	color:#FFF;
-	font-family: 'UbuntuMedium';
-	font-size:19px;
-	padding-left:0px;	
-}
-
-.tabtext a:hover, a:active, a:focus {
-	text-decoration:none;
-	border-bottom-style:none;
-	border-bottom-width:medium;
-	border-bottom-color:#FFF;
-	color:#049A9D;
-}
-
-.currenttabtext a:hover, a:active, a:focus, a:visited{
-	text-decoration:none;
-	border-bottom-style:none;
-	border-bottom-color:#FFF;
-	color:#FFF
-}
-
-.currenttabtext{	
-	color:#FFF;
-	font-family: 'UbuntuMedium';
-	font-size:19px;
-}
-
-.currenttabtext a:link{	
-	text-decoration:none;
-	color:#FFF;
-	font-family: 'UbuntuMedium';
-	font-size:19px;
-	border-bottom-style:none;
-	border-bottom-color:#FFF;
-}
-
-.rheading a:link{
+/*.rheading a:link{
 	text-decoration: none;
 	color:#FFF;
-}
-
-.rheading{
-	color:#FFF;
-	font-family:'UbuntuMedium';
-	font-size:19px;
 }
 
 .rheading a:visited{
@@ -161,12 +99,6 @@
 	color:#049A9D;
 }
 
-.rsubheading{
-	color:#1FAAA6;
-	font-family:'UbuntuBold';
-	font-size:15px;
-}
-
 .ritalic{
 	color:#FFF;
 	font-style:italic;
@@ -177,7 +109,7 @@
 	color:#FFF;
 	font-size:12px;
 	line-height:auto;
-}
+}*/
 
 .ibody{
 	color:#FFF;
