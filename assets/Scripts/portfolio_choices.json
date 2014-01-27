@@ -90,7 +90,7 @@
        ],
       "name": "Pick Six",
       "medium": "Interactive Web App (Design/HTML/CSS)",
-      "text": "This interactive web app is a small game aimed at exploring symbol sets and the resulting positive and negative space. The user creates six symbols which are each composed of a 9 part tappable grid that changes the corresponding shape of the symbol. The game was designed specifically for iPad using HTML, CSS, and some jQuery. The bold color scheme emphasizes the symbols.<span class='demotext'><a href='assets/PickSix/TheGame.html'>Check it out</a></span>" 
+      "text": "This interactive web app is a small game aimed at exploring symbol sets and the resulting positive and negative space. The user creates six symbols which are each composed of a 9 part tappable grid that changes the corresponding shape of the symbol. The game was designed specifically for iPad using HTML, CSS, and some jQuery. The bold color scheme emphasizes the symbols.<span class='demotext'><a href='assets/PickSix/TheGame.html' target='_blank'>Check it out</a></span>" 
   },
   "mastermind": {
       "mainimg": "mastermindB",
@@ -101,7 +101,7 @@
                    ],
       "name": "Mastermind",
       "medium": "Interactive Web App (Design and all coding)", 
-      "text": "A redesigned version of the classic code breaking game, Mastermind, in which players attempt to figure out a color combination based on feedback from the code setter which in this case is the computer. Muted greys for the background put on emphasis on the focus of the game, brightly colored spheres. The web app is coded entirely in HTML, CSS, and Javascript and fits perfectly on an iPad screen. A Spotify widget is integrated so you can be inspired by some intense instrumental tunes while you play. See if you can beat the hard mode!<span class='demotext'><a href='assets/mastermind/index.html'>Play the game (Try it on an iPad!)</a></span><span class='demotext'><a href='https://github.com/lwalker5/mastermind'>GitHub</a></span>"
+      "text": "A redesigned version of the classic code breaking game, Mastermind, in which players attempt to figure out a color combination based on feedback from the code setter which in this case is the computer. Muted greys for the background put on emphasis on the focus of the game, brightly colored spheres. The web app is coded entirely in HTML, CSS, and Javascript and fits perfectly on an iPad screen. A Spotify widget is integrated so you can be inspired by some intense instrumental tunes while you play. See if you can beat the hard mode!<span class='demotext'><a href='assets/mastermind/index.html' target='_blank'>Play the game (Try it on an iPad!)</a></span><span class='demotext'><a href='https://github.com/lwalker5/mastermind' target='_blank'>GitHub</a></span>"
   },
   "mysite": {
       "mainimg" : "SiteDemo",
@@ -125,7 +125,7 @@
                    ],
       "name": "Paramount Plastics Interface",
       "medium": "Interactive Web Prototype (UI/Design/HTML/CSS)", 
-      "text": "Paramount Plastics, a vacuum forming plastic company located in Northern Indiana, was in need of a new control interface for one of their machines. To eliminate problems of readability ease worker stress, and improve productivity my web design class explored an iPad interface. We first visited the company to gather research and then made interactive web app prototypes to present to workers that would potentially use the machines. This is my take on an interface redesign for iPad. The white on dark improves readability and the streamlined process eliminates unnecessary steps and chances of error.<span class='demotext'><a href='assets/Paramount/PresentationComplete.pdf'>View the presentation for the client</a></span><span class='demotext'><a href='https://github.com/lwalker5/control-interface-prototype.git'>GitHub</a></span>"
+      "text": "Paramount Plastics, a vacuum forming plastic company located in Northern Indiana, was in need of a new control interface for one of their machines. To eliminate problems of readability ease worker stress, and improve productivity my web design class explored an iPad interface. We first visited the company to gather research and then made interactive web app prototypes to present to workers that would potentially use the machines. This is my take on an interface redesign for iPad. The white on dark improves readability and the streamlined process eliminates unnecessary steps and chances of error.<span class='demotext'><a href='assets/Paramount/PresentationComplete.pdf' target='_blank'>View the presentation for the client</a></span><span class='demotext'><a href='https://github.com/lwalker5/control-interface-prototype.git' target='_blank'>GitHub</a></span>"
   },
   "figure": {
       "mainimg": "male1",
