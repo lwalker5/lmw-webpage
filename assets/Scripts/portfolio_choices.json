@@ -93,7 +93,7 @@
       "text": "This interactive web app is a small game aimed at exploring symbol sets and the resulting positive and negative space. The user creates six symbols which are each composed of a 9 part tappable grid that changes the corresponding shape of the symbol. The game was designed specifically for iPad using HTML, CSS, and some jQuery. The bold color scheme emphasizes the symbols.<span class='demotext'><a href='assets/PickSix/TheGame.html'>Check it out</a></span>" 
   },
   "mastermind": {
-      "mainimg": "MastermindB",
+      "mainimg": "mastermindB",
       "maintitle": "A new game on easy mode",
       "more_imgs": [
                     {"name":"mastermindA.png", "caption":"Someone cracked the code just in time"},

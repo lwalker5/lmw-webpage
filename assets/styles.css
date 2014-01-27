@@ -60,7 +60,7 @@ outline:none;
 	}
 	
 .main {
-	margin: 3.6em;
+	margin: 5.6em 3.6em 3.6em 3.6em;
 }
 
 .inline-block {
@@ -75,14 +75,6 @@ outline:none;
 	display: none !important;
 }
 
-/*.desktop_hidden {
-	display: none !important;
-}
-
-.desktop_shown {
-	display: block;
-}
-*/
 .invisible {
 	visibility: hidden;
 }
@@ -123,20 +115,9 @@ h1 {
 	margin-right: 36px;
 }
 
-/*.left img {
-	float: right;
-	margin-right: 2.5em;
-}*/
-
 #logo {
-	margin-top:2em;
 	display: inline-block;
-	vertical-align: bottom;	
-}
-
-#navigation {
-	/*display: inline-block;*/
-	margin-left: -4px;
+	float: left;
 }
 
 .about img {
@@ -164,7 +145,6 @@ h1 {
 }
 
 #aboutme.on {
-	width: 110px;
 	background-image:url(abouttab.png);
 }
 
@@ -173,7 +153,6 @@ h1 {
 }
 
 #resume.on {
-	width: 100px;
 	display: inline-block;
 	background-image:url(resumetab.png);
 }
@@ -183,7 +162,6 @@ h1 {
 }
 
 #portfolio.on {
-	width:115px;
 	background-image:url(portfoliotab.png);
 }
 
@@ -193,21 +171,9 @@ h1 {
 
 
 #contact.on {
-	width:99px;
 	background-image:url(contacttab.png);
 }
 
-#contactinfo {
-	height:400px;
-	width:400px;
-	float:left;
-	margin-left:500px;
-}
-
-#contactinfo a:hover{
-	border-bottom-style:none;
-	opacity:0.6;
-}
 
 #github {
 	margin-right: 0em;
@@ -218,21 +184,6 @@ h1 {
 	width: 432px;
 	background-image:url(bar.png);
 	display: block;
-}
-
-#left{
-	height:450px;
-	width:424px;
-	margin-left:36px;
-	float:left;
-}
-
-#right{
-	height:475px;
-	width:430px;
-	margin-left:36px;
-	margin-right:31px;
-	float:left;
 }
 
 .resume {
@@ -297,28 +248,8 @@ h1 {
 	margin-right: 2.5em;
 }
 
-#proficient{
-	width:150px;
-	float:left;
-}
-
-#familiar{
-	width:135px;
-	float:left;
-}
-
-#design{
-	width:135px;
-	float:left;
-}
-
 #thumbnails{
 	width:873px;
-	/*height:120px; 
-	margin-left:36px;
-	margin-right:36px;
-	float:left;
-	overflow: hidden;*/
 }
 
 #thumbnails li:hover{
@@ -332,42 +263,12 @@ h1 {
 	margin-left: 36px;
 }
 
-#piece{
-	width:424px;
-	float:left;
-}
-
 .name {
 	font-family: 'UbuntuMedium';
 	font-size: 1.9em;
 	line-height: 1.2em;
 	display: block;
 	color: #1FAAA6;
-}
-
-#pieceinfo{
-	width:424px;
-	margin-left:36px;
-	float:left;
-}
-
-#pieceicons{
-	margin-left:36px;
-	margin-top:10px;
-	float:left;
-}
-
-#headings{
-	margin-top:0px; /*15px*/
-	height:25px;
-}
-
-	
-#icon{
-	width:64px;
-	margin-right:25px;
-	float:left;
-	height:75px;
 }
 
 .label{
@@ -454,10 +355,12 @@ canvas {
   visibility: hidden;
   position: relative;
 }
+
 .swipe-wrap {
   overflow: hidden;
   position: relative;
 }
+
 .swipe-wrap > div {
   float:left;
   width:100%;
@@ -542,10 +445,18 @@ canvas {
 
 	.content {
 		margin-top: 7em;
+		display: inline-block;
+		width: 100%;
 	}
 
 	.intro {
 		width: 281px;
+	}
+
+	#navigation {
+		display: inline-block;
+		height: 58px;
+		float: left;
 	}
 
 	#navigation a {
@@ -650,8 +561,9 @@ canvas {
 
 	#navigation {
 		width: 100%;
-		margin-top: 13em;
+		margin-top: 14em;
 		margin-left: 0;
+		vertical-align: bottom;
 	}
 
 	#navigation .inline-block{
@@ -681,6 +593,8 @@ canvas {
 
 	#portfolio.on {
 		box-shadow: 0px 4px 10px #888888;
+		-moz-box-shadow: 0px 4px 10px #888888;
+  		-webkit-box-shadow: 0px 4px 10px #888888;
 	}
 
 
@@ -720,12 +634,6 @@ canvas {
 
 	.end-of-line {
 		margin-right: 0em !important;
-	}
-
-	#bar {
-		width: auto;
-		height: 3px;
-		margin-bottom: 1.5em;
 	}
 
 	#abouttext {

@@ -38,7 +38,7 @@ LMW.navigation = (function(window, document, $, undefined) {
   //element_id must be 'about me', 'resume', 'portfolio', or 'contact' (desktop only)
   function navigateTo(element_id,resize) {
 
-    document.getElementById('content').setAttribute('data-active_section',element_id);
+    document.getElementById('content').setAttribute('data-active-section',element_id);
     resetNavigation();
 
 
@@ -78,12 +78,6 @@ LMW.navigation = (function(window, document, $, undefined) {
     }
   }
 
-  //set up click handlers for the navigation tabs
- /* function setupClickHandlers() {
-    $("#navigation").on('click','.tabtext', function() { navigateTo(this.id); })    
-    $(".needs_kerning").lettering();
-    //$("div#categories").on('click','.pheader',function() {changeSelectedSection(this.id); this.classList.add("selected"); })
-  }*/
   function mobileCheck() {
     var w = $(window).width();
     if (w < 961) { is_mobile = true;}
@@ -91,13 +85,8 @@ LMW.navigation = (function(window, document, $, undefined) {
   }
 
 
-  /*window.onOrientationChange(function() {
-    var active_section = document.getElementById('content').getAttribute('data-active_section');
-    alert(active_section);
-  });*/
-
   $(window).resize(function() {
-    var active_section = document.getElementById('content').getAttribute('data-active_section');
+    var active_section = document.getElementById('content').getAttribute('data-active-section');
     var prev_status = is_mobile;
     mobileCheck();
 
@@ -117,7 +106,7 @@ LMW.navigation = (function(window, document, $, undefined) {
         }
         LMW.portfolio.addArrowHandler();
       }
-      navigateTo(active_section); 
+      if (active_section != "none") {navigateTo(active_section);}
     }
   });
 
@@ -130,6 +119,5 @@ LMW.navigation = (function(window, document, $, undefined) {
       mobileCheck();
     }
   };
-  //window.setupClickHandlers = setupClickHandlers;
 
 })(window, document ,jQuery); 
