@@ -49,7 +49,7 @@ LMW.navigation = (function(window, document, $, undefined) {
 
     if (resize == false && element_id == "portfolio")
     {
-      $("#portfolio_section").empty();
+      $("#portfolio-section").empty();
       LMW.portfolio.clearCategoryLinks();
     }
 
@@ -96,7 +96,7 @@ LMW.navigation = (function(window, document, $, undefined) {
       //maintain the active section no matter the size, but only show first piece for desktop
       if (active_section === "portfolio")
       {
-        $("#portfolio_section").empty();
+        $("#portfolio-section").empty();
         var act_sect = document.getElementById("portfolio_content").getAttribute("data-current_section");
 
         if (act_sect != "none")
@@ -114,8 +114,11 @@ LMW.navigation = (function(window, document, $, undefined) {
   return {
     mobile: window.is_mobile,
     setupClickHandlers: function() {
-      $("#navigation").on('click','.tabtext', function() { navigateTo(this.id,false); })    
+      $("#navigation").on('click','.nav-tab', function() { navigateTo(this.id,false); })    
       $(".needs_kerning").lettering();
+      var contact = $("#mobile_heading").children().clone();
+      contact[2].classList.remove('mobile-only');
+      $("#contact_content").append(contact);
       mobileCheck();
     }
   };

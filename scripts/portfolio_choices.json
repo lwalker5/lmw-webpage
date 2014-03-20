@@ -11,7 +11,7 @@
                     { "name":"RefinedConceptsA.png", "caption":"Refined concepts"},
                     { "name":"LimitedOrthoA.png", "caption":"Limited orthographic views"},
                     { "name":"SpaceCruiserPurpleA.png", "caption":"Genesis makes the jump to light speed"},
-                    { "name":"SpaceExplorationA.png", "caption":"Scout ships are sent out to explore a new planet"},
+                    { "name":"SpaceExplorationA.png", "caption":"Scout ships are sent out to explore a planet"},
                     { "name":"SpaceLandingA.png", "caption":"Scout ships and scientists set out to explore."}
                    ],
       "name": "Genesis II: Space Cruiser",
@@ -55,7 +55,7 @@
                    ],
       "name": "Type Specimen Book: Futura",
       "medium": "5' by 7' informational book",
-      "text": "This short book presents all you need to know about the typeface Futura. Included are history, characteristics, and notable usages. I chose a bright color scheme and a generally humorous writing style to appeal to a general audience. The book was researched, edited, designed, and bound by myself. As a result of this project I now love Futura.<span class='demotext'><a href='assets/Futura/FullBook.pdf'>The Complete Book PDF</a></span>"
+      "text": "This short book presents all you need to know about the typeface Futura. Included are history, characteristics, and notable usages. I chose a bright color scheme and a generally humorous writing style to appeal to a general audience. The book was researched, edited, designed, and bound by myself. As a result of this project I now love Futura.<span class='demotext'><a href='assets/futura/FullBook.pdf' target='_blank'>The Complete Book PDF</a></span>"
   },
   "drink": {
       "mainimg": "hotChocolate",
@@ -67,7 +67,7 @@
   },
   "lego": {
       "mainimg": "frolic",
-      "maintitle": "LEGO dude is happily frolicking through the fields!",
+      "maintitle": "LEGO dude is frolicking through the fields!",
       "more_imgs": [
                   {"name":"bricksterbig.png", "caption":"Brickster is getting away with the pizza"},
                   {"name":"orthos.png", "caption":"Profile view of the basic model"},
@@ -90,7 +90,7 @@
        ],
       "name": "Pick Six",
       "medium": "Interactive Web App (Design/HTML/CSS)",
-      "text": "This interactive web app is a small game aimed at exploring symbol sets and the resulting positive and negative space. The user creates six symbols which are each composed of a 9 part tappable grid that changes the corresponding shape of the symbol. The game was designed specifically for iPad using HTML, CSS, and some jQuery. The bold color scheme emphasizes the symbols.<span class='demotext'><a href='assets/PickSix/TheGame.html' target='_blank'>Check it out</a></span>" 
+      "text": "This interactive web app is a small game aimed at exploring symbol sets and the resulting positive and negative space. The user creates six symbols which are each composed of a 9 part tappable grid that changes the corresponding shape of the symbol. The game was designed specifically for iPad using HTML, CSS, and some jQuery. The bold color scheme emphasizes the symbols.<span class='demotext'><a href='assets/picksix/TheGame.html' target='_blank'>Check it out</a></span>" 
   },
   "mastermind": {
       "mainimg": "mastermindB",
@@ -113,7 +113,7 @@
   },
   "paramount": {
       "mainimg": "MoldingA",
-      "maintitle": "Paramount plastics interface",
+      "maintitle": "New manufacturing interface",
       "more_imgs": [
                     {"name":"OldInterface.png", "caption":"The interface in need of a user friendly update"},
                     {"name":"Login.png", "caption":"Login screen"},
@@ -123,9 +123,9 @@
                     {"name":"Ready.png", "caption":"Ready to begin - two buttons for safety"},
                     {"name":"MoldingA.png", "caption":"Status indicator - previously nonexistent"}
                    ],
-      "name": "Paramount Plastics Interface",
+      "name": "Manufacturing Control Interface",
       "medium": "Interactive Web Prototype (UI/Design/HTML/CSS)", 
-      "text": "Paramount Plastics, a vacuum forming plastic company located in Northern Indiana, was in need of a new control interface for one of their machines. To eliminate problems of readability ease worker stress, and improve productivity my web design class explored an iPad interface. We first visited the company to gather research and then made interactive web app prototypes to present to workers that would potentially use the machines. This is my take on an interface redesign for iPad. The white on dark improves readability and the streamlined process eliminates unnecessary steps and chances of error.<span class='demotext'><a href='assets/Paramount/PresentationComplete.pdf' target='_blank'>View the presentation for the client</a></span><span class='demotext'><a href='https://github.com/lwalker5/control-interface-prototype.git' target='_blank'>GitHub</a></span>"
+      "text": "A local vacuum forming plastic company in Indiana was in need of a new control interface for one of their machines. To eliminate readability problems, ease worker stress, and improve productivity my web design class explored an iPad interface. We first visited the company to gather research and then made interactive web app prototypes to present to workers that would potentially use the machines. This is my take on an interface redesign prototype for iPad. The white on dark improves readability and the streamlined process eliminates unnecessary steps and chances of error.<span class='demotext'><a href='assets/paramount/PresentationComplete.pdf' target='_blank'>View the presentation for the client</a></span><span class='demotext'><a href='https://github.com/lwalker5/control-interface-prototype.git' target='_blank'>GitHub</a></span>"
   },
   "figure": {
       "mainimg": "male1",

@@ -7,7 +7,7 @@ LMW.portfolio = (function(window, document, $, undefined) {
     function loadPortfolioData(){
         if (!LMW.choices){
             $.ajax({
-            url: 'assets/scripts/portfolio_choices.json',
+            url: 'scripts/portfolio_choices.json',
             dataType: 'json',
             success: function(data) {
             LMW.choices = data;
@@ -18,8 +18,6 @@ LMW.portfolio = (function(window, document, $, undefined) {
             })
         }
     }
-
-
 
   function changeHTML(selectedIcon) {
     var img_id = selectedIcon + "_icon";
@@ -75,7 +73,7 @@ LMW.portfolio = (function(window, document, $, undefined) {
 
 
     //A short description below the image
-    var caption = makeElement('span',['ritalic','caption']);
+    var caption = makeElement('span',['cap-italic','caption']);
     var captxt = document.createTextNode(info.maintitle);
     if (info.maintitle != undefined) { caption.appendChild(captxt);} 
 
@@ -91,7 +89,7 @@ LMW.portfolio = (function(window, document, $, undefined) {
         new_img.src = "assets/" + selectedIcon + "/" + info.more_imgs[i].name;
         new_img.title = info.more_imgs[i].caption;
         new_swiperwrapper.appendChild(new_img);
-        var new_caption  = makeElement('span',['ritalic','caption']);
+        var new_caption  = makeElement('span',['cap-italic','caption']);
         var new_captxt = document.createTextNode(info.more_imgs[i].caption);
         if (info.more_imgs[i].caption != undefined) { new_caption.appendChild(new_captxt);} 
         new_swiperwrapper.appendChild(new_caption);
@@ -155,7 +153,7 @@ LMW.portfolio = (function(window, document, $, undefined) {
     text.appendChild(ext_text);
     piecewrapper.appendChild(text);
 
-    document.getElementById('portfolio_section').appendChild(piecewrapper);
+    document.getElementById('portfolio-section').appendChild(piecewrapper);
     window.mySwipe = [];
     addSwiper(selectedIcon);
     if (more_imgs.length > 0 ) {
@@ -284,7 +282,7 @@ LMW.portfolio = (function(window, document, $, undefined) {
 
   return {
     clearCategoryLinks: function() {
-      var child_list = document.getElementById('categories').children;
+      var child_list = document.getElementById('portfolio-categories').children;
       for (var index = 0; index < child_list.length; index++)
       {
         if (child_list[index].classList.contains('selected'))
@@ -298,7 +296,7 @@ LMW.portfolio = (function(window, document, $, undefined) {
     changeSelectedSection: function(chosen) {
       LMW.portfolio.clearCategoryLinks();
 
-      document.getElementById('portfolio_section').innerHTML = '';
+      document.getElementById('portfolio-section').innerHTML = '';
       document.getElementById('portfolio_content').setAttribute('data-current_section',chosen);
 
       var data = {
@@ -367,23 +365,23 @@ LMW.portfolio = (function(window, document, $, undefined) {
           for (var a = 0; a < portfolio_contents.length; a++)
           {
               var new_link = document.createElement("a");
-              new_link.classList.add("pheader");
+              new_link.classList.add("portfolio-header-text");
               new_link.classList.add("inline-block");
               new_link.id = portfolio_contents[a].name;
 
               text_label = document.createTextNode(portfolio_contents[a].name);
 
               new_link.appendChild(text_label);
-              var spot = document.getElementById("categories");
+              var spot = document.getElementById("portfolio-categories");
               spot.appendChild(new_link);
           }
 
           //add click handlers for the portfolio categories
-          $("div#categories").on('click','.pheader',function() {LMW.portfolio.changeSelectedSection(this.id); this.classList.add("selected"); });
+          $("div#portfolio-categories").on('click','a',function() {LMW.portfolio.changeSelectedSection(this.id); this.classList.add("selected"); });
 
           //add click handlers for the portfolio thumbnails - desktop only
           $("div#thumbnails").on('click','img',function() { 
-            $("div#portfolio_section").empty();
+            $("div#portfolio-section").empty();
 
             var name = this.id.replace('_icon','');
 
