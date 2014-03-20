@@ -1,0 +1,622 @@
+@charset "UTF-8";
+@import "compass";
+@import "breakpoint";
+@import "reset.css";
+
+/*Media breakpoints*/
+$mobile: max-width 320px;
+$mobile_landscape: (max-device-width 767px) (max-device-height 767px) (orientation landscape);
+$mid-range-and-below: max-width 960px;
+$desktop: 961px;
+
+/*Colors!*/
+$background-brown: #30261C;
+$teal: #1FAAA6; 
+$background-teal: #0B8185;
+$light-gray: #E2E2E2;
+
+@mixin mobile {
+	@include breakpoint($mobile) {
+		@content;
+	}
+}
+
+@mixin mobile-landscape {
+	@include breakpoint($mobile_landscape) {
+		@content;
+	}
+}
+
+@mixin mid-range {
+	@include breakpoint($mid-range-and-below) {
+		@content;
+	}
+}
+
+@mixin desktop {
+	@include breakpoint($desktop) {
+		@content;
+	}
+	.old-ie & {
+		@content;
+	}
+}
+
+body {
+	font: 62.5% Verdana, Arial, Helvetica, sans-serif;
+	line-height: 1.4;
+	background: $background-brown; 
+	margin: 0;
+	padding: 0;
+	color: #FFF;
+}
+
+a img { border: none; }
+a {
+	cursor: pointer;
+	color: #FFF;
+}
+
+a:link { 
+	color: #FFF;
+	text-decoration: none; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited { text-decoration: none; }
+
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+	border-bottom-style:none;
+	color: $teal;
+}
+
+input:focus{ outline:none; }
+
+/* This fixed width container surrounds all other elements */
+.wrapper {
+	width: 100%;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+	@include desktop{
+		width: 960px;
+	}
+}
+	
+.main { 
+	min-width: 320px;
+	margin: 2em 0; //960 and below
+	@include desktop {
+		margin: 5.6em 3.6em 3.6em 3.6em; 
+	}
+}
+
+.inline-block { display: inline-block; } 
+.vert-align { vertical-align: top; }
+.hidden { display: none !important; }
+.invisible { visibility: hidden;}
+.one-column-only { display: none; }
+.no-margins { margin: 0 !important;}
+.end-of-line { margin-right: 0em !important; }
+
+p { margin-bottom: 1em; }
+
+.mobile-only {
+	@include desktop {
+		display: none;
+	}
+}
+ 
+.white_heading {
+	font-family: 'UbuntuMedium';
+	font-size: 1.6em;
+}
+
+#logo { float: left; }
+
+h1 {
+	font-family: "UbuntuBold", Helvetica, sans-serif;
+	font-weight: normal;	
+	color: $teal;
+}
+
+.intro {
+	@include mid-range {
+		position: absolute;
+		top: 2em;
+		left: 2em;
+		margin: 0;
+		min-width: 279px;
+	}
+
+	@include desktop {
+		margin: 0 auto; 
+		width: 281px;
+	}
+
+	h1 {
+		line-height: 0.75em;
+		font-size: 3.1em;
+		margin-bottom: 0px;
+		font-weight: normal;
+		@include desktop {
+			line-height: 1em;
+		}
+	}
+
+	h3 {
+		font-family: "UbuntuMedium", Helvetica, sans-serif;
+		font-size: 1.9em;
+		font-weight: normal;
+		margin-bottom: 0.4em;
+		@include desktop {
+			margin-bottom: 0.1em;
+		}
+	}	
+}	
+
+#navigation {
+	width: 100%;
+	vertical-align: bottom;
+	
+	@include mid-range { margin-top: 14em; }
+	@include desktop {
+		width: auto;
+		display: inline-block;
+		height: 58px;
+	}
+}
+
+.nav-tab {
+	@include mid-range { width: 100% !important; }
+	@include desktop {
+		height: 47px; 
+		padding: 0 1.6em;
+	}
+
+	a { 
+		@include mid-range {
+			text-transform: uppercase;
+			font-family: 'UbuntuBold' !important;
+			font-size: 2em;
+			line-height: 2.4em;
+			width: 93%;
+			display: inline-block;
+			padding-left: 1.0em;
+		}
+		@include mobile-landscape { 
+			padding-left: 1.5em; 
+			font-size: 1.3em;
+		}
+		@include desktop {
+			font-family: 'UbuntuMedium';
+			font-size:1.8em;
+			padding-left:0px;
+			padding-top: 0.5em;
+			display: block;
+			text-align: center;
+		}
+	}
+
+	a:visited {
+		font-size:1.8em;
+		padding-left:0px;
+	}
+
+	&.on {
+		background-color: #0B8185;
+		@include desktop {
+			-moz-border-radius: 5px 5px 0px 0px;
+			border-radius: 7px 7px 0px 0px;
+		}
+		
+		a:hover, a:active, a:focus{
+			color: #FFF; 
+		}
+	}	
+}
+
+#bar{
+	height:11px;
+	//width: 431px;
+	background-image:url(../assets/bar.png); 
+	display: block;
+}
+
+#thumbnails{
+	width:873px;
+
+	li:hover {
+	cursor: pointer;
+	}
+}
+
+.label, .common{
+	width:64px;
+	float:left;
+	margin-right: 25px;
+}
+
+.content {
+	@include mid-range {
+		margin: 0em !important;
+	}
+	@include desktop {
+		margin-top: 7em;
+		display: inline-block;
+		width: 100%;
+	}
+}
+
+#abouttext {
+	line-height: 1.5;
+	font-size: 1.3em;
+	width: auto;
+	margin: 1.5em 0em;
+	@include desktop {
+		width: 47%;
+		margin: 0;
+	}
+	@include mobile-landscape { font-size: 0.8em; }
+}
+
+#aboutheading {
+	margin: 0;
+	@include desktop { margin: 0 2em 0 18em; }
+	img { margin-right: 1.5em; }
+	.bodytext {
+		font-size:1.4em;
+		font-family: 'UbuntuRegular';
+	}
+}
+
+.resume {
+	font-size: 1.2em;
+	line-height: 1.5;
+	@include mobile-landscape {
+		font-size: 0.7em;
+		font-weight: normal;
+	}
+}
+
+#resume_content {}
+	.ritalic {
+		margin: 0 0 1em 0;
+		display: block;
+		font-size: 1.1em;
+		font-style: italic;
+
+		@include mid-range {
+			line-height: 1.1em;
+		}
+		@include desktop {
+			display: inline-block;
+			margin: 0 0 0 1em;
+		}
+	}
+	.rbody {
+			display: block;
+			margin-top: 0.25em;
+	}
+
+	.r-left {
+		width: 100%;
+		@include desktop {
+			width: 49%;
+			margin: 0em auto;
+			vertical-align: top;
+		}	
+	}
+
+	.r-right {
+		@include desktop {
+			width: 47%;
+			margin-left: 2em;
+			.rsection { padding-top: 0; }
+		}
+	}
+//}
+
+.rsection {
+	padding: 1.5em 0;
+	display: block;
+	@include mid-range {
+		border-bottom: 1px solid #0B8185; 	
+	}
+	&.desktop-only { padding-bottom: 0em; }
+
+	h1 {
+		font-size: 1.5em;
+		display: block;
+	}
+
+	h2 {
+		font-family:'UbuntuMedium';
+		font-weight: normal;
+		font-size: 1.5em;
+		margin-bottom: 0.8em;
+	}
+
+	img {
+		vertical-align: middle;
+		margin-right: 1em;
+	}
+
+	.white_heading {
+		margin-right: 5em;
+		font-size: 1.3em;
+	}
+	}
+	.rsubheading{
+		color: $teal;
+		font-family:'UbuntuBold';
+		font-size:1.2em;
+		display: block;
+		@include desktop{
+			display: inline;
+		}
+	}
+
+	.skills {
+		margin-right: 1em;
+		display: inline-block;
+		vertical-align: top;
+		width: auto;
+
+		@include mobile-landscape { font-size: 1.6em; }
+		@include desktop { margin-right: 2.5em; }
+		.rsubheading { display: block; }
+	}
+
+	.r-exp-entry {
+		padding-bottom: 2em;
+
+		.last{ padding-bottom: 0em; }
+	}
+//end of resection
+
+.portfolio-header {
+	margin: 0em 0em 2em 0em;
+	background-color: $light-gray;
+	a {
+		font-size: 1.4em;
+		font-family: 'UbuntuBold';
+		padding-left: 7%;
+		padding-right: 6%;
+		color: #44392F;
+		cursor: pointer;
+	}
+
+	.selected, a:hover,a:active,a:visited {
+		color: $background-teal;
+	}
+}
+.portfolio-categories { padding: 0.75em 2em; }
+
+.pieceshell {
+	@include mid-range {
+		float: none;
+		padding-bottom: 2em;
+		margin: 0 2em 2em;
+		border-bottom: 1px solid #0B8185; 
+	}
+}
+	.imgshell {
+		width: 50%;
+		@include mid-range {
+			overflow: hidden;
+		}
+		@include desktop {
+			width: 47%;
+			margin-right: 2em;
+		}
+	}
+
+	.img_and_cap img { width: 100%; }
+
+	.textshell {
+		width: 45%;
+		vertical-align: top;
+		margin-left: 2em;
+		@include desktop {
+			width: 48%;
+		}
+	}
+//}
+
+//Styles for swipe.js
+.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+}
+
+.swipe-wrap {
+  overflow: hidden;
+  position: relative;
+}
+
+.swipe-wrap > div {
+  float:left;
+  width:100%;
+  position: relative;
+}
+//////////////////////
+
+.caption {
+	margin: 1em 0 1.5em 0;
+	display: block;
+	width: 100%;
+	text-align: center;
+	&.cap-italic {
+		font-style: italic;
+		font-size: 1.3em;
+		margin: 1em 0;
+		@include desktop {
+			margin-bottom: 0em;
+			font-size: 1.4em;
+		}
+	}
+}
+
+.textshell {}
+	.name {
+		font-family: 'UbuntuMedium';
+		font-size: 1.9em;
+		line-height: 1.2em;
+		display: block;
+		color: $teal;
+	}
+
+	.pmedium {
+		display: block;
+		padding-bottom: 2em;
+		padding-top: 0.2em;
+		font-size: 1.3em;
+	}
+
+	.pieceinfo {
+		@include mid-range { text-align: justify; }
+		@include mobile-landscape { font-size: 1.2em; }
+	}
+
+	.demotext {
+		display: block;
+		font-size: 1.2em;
+		font-family: 'UbuntuMedium';
+		margin: 0.75em 0em 0 0;
+		@include desktop {
+			font-size: 1.3em;
+		}
+	}
+//}
+
+canvas {
+	display: block;
+	margin: 0 auto;
+	@include desktop {
+		margin-top: 1em;
+	}
+}
+
+.arrow {
+	height: 62px;
+	cursor: pointer;
+	position: relative;
+	margin-bottom: -7em;
+	@include mobile {
+		display: none;
+	}
+}
+
+#l {
+	float: left;
+	left: -25px;
+}
+
+#r {
+	float: right;
+	right: -25px;
+}
+
+.contact-icons {
+	display: block;
+	width: 100%;
+	height: 43px;
+	@include desktop { margin-top: 1em; }
+
+	li {
+		width: 43px;
+		margin-right: 12px;
+		line-height: 0em;
+		font-size: 0em;
+		display: inline-block;	
+		@include desktop {
+			margin-right: 10px;
+			opacity: 0.9;	
+		}
+	}
+
+	a { 
+		background-size: 43px 43px;
+		display: block;
+		height: 43px;
+		box-shadow: 5px 5px 5px rgba(0,0,0,0.3); 
+	}
+
+	.email { 
+		a { background-image: url(../assets/mobile/mail2x.png); }
+		a:hover { background-image: url(../assets/mobile/mail_white2x.png); }
+	}
+	.facebook {
+		a { background-image: url(../assets/mobile/facebook2x.png); }
+		a:hover { background-image: url(../assets/mobile/facebook_white2x.png); }
+	}
+	.linkedin {
+		a { background-image: url(../assets/mobile/linkedin2x.png); }
+		a:hover { background-image: url(../assets/mobile/linkedin_white2x.png); }
+	}
+	.twitter {  
+		a { background-image: url(../assets/mobile/twitter2x.png); }
+		a:hover { background-image: url(../assets/mobile/twitter_white2x.png); }
+	}
+	.github {
+		a { background-image: url(../assets/mobile/github2x.png); }
+		a:hover { background-image: url(../assets/mobile/github_white2x.png); }
+	}
+}
+
+.old-ie .contact-icons {
+	.email {
+		a { background-image: url(../assets/mobile/mail.png); }
+		a:hover { background-image: url(../assets/mobile/mail_white.png); }
+	}
+	.facebook {
+		a { background-image: url(../assets/mobile/facebook.png); }
+		a:hover { background-image: url(../assets/mobile/facebook_white.png); }
+	}
+	.linkedin {
+		a { background-image: url(../assets/mobile/linkedin.png); }
+		a:hover { background-image: url(../assets/mobile/linkedin_white.png); }
+	}
+	.twitter {
+		a { background-image: url(../assets/mobile/twitter.png); }
+		a:hover { background-image: url(../assets/mobile/twitter_white.png); }
+	}
+	.github {
+		a { background-image: url(../assets/mobile/github.png); }
+		a:hover { background-image: url(../assets/mobile/github_white.png); }
+	}
+}
+
+@media only screen and (max-width: 960px){
+
+	.desktop-only { display: none !important; }
+
+	#portfolio.on {
+		box-shadow: 0px 4px 10px #888888;
+		-moz-box-shadow: 0px 4px 10px #888888;
+  		-webkit-box-shadow: 0px 4px 10px #888888;
+	}
+
+	.add-margins {
+		margin: 1em 2em;
+		display: block;
+	}
+
+	.blue-line {
+		padding-bottom: 1.5em;
+		border-bottom: 1px solid #0B8185;
+	}
+}
+
+@media only screen and (max-width: 479px){
+	.imgshell { width: 100%; }
+
+	.textshell {
+		width: 100%;
+		margin-left: 0;
+		margin-top: 1.5em;
+	}
+
+	.one-column-only { display: block; }
+
+	.two-column-only { display: none; }
+}
