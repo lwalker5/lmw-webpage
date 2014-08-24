@@ -3,21 +3,42 @@ if (typeof(LMW) == 'undefined') LMW = {};
 
 LMW.portfolio = (function(window, document, $, undefined) {
 
+  var portfolioData = {
+      '3D': ['spacecruiser','drink','lego'],
+      'web': ['mysite','ifeis','mastermind','picksix'],
+      'print': ['bandlink','sixword','futura'],
+      'drawing': ['figure','dress','technical','character']
+  }  
 
-    function loadPortfolioData(){
-        if (!LMW.choices){
-            $.ajax({
-            url: 'scripts/portfolio_choices.json',
-            dataType: 'json',
-            success: function(data) {
+  function loadPortfolioData(){
+      if (!LMW.choices){
+          $.ajax({
+          url: 'scripts/portfolio_choices.json',
+          dataType: 'json',
+          success: function(data) {
             LMW.choices = data;
-            },
-            error: function(err,status,errorText) {
-              //console.log(status,errorText);
+            var template = Handlebars.compile($('#thumbnail_template').html());
+            for (var category in portfolioData) {
+              var categoryList = portfolioData[category];
+              var templateData = {};
+              for (var j = 0; j < categoryList.length; j++) {
+                var pieceName = categoryList[j];
+                templateData[pieceName] = data[pieceName];
+              }
+              var iconHTML = template(templateData);
+              $('.swiper-wrapper').append(iconHTML);
             }
-            })
-        }
-    }
+          },
+          error: function(err,status,errorText) {
+            //console.log(status,errorText);
+          }
+          })
+      }
+  }
+
+  function loadThumbnails(data) {
+  }
+
 
   function changeHTML(selectedIcon) {
     var img_id = selectedIcon + "_icon";
@@ -27,10 +48,12 @@ LMW.portfolio = (function(window, document, $, undefined) {
       document.getElementById('portfolio_content').setAttribute('data-current_section',category);
     }
 
+    console.log(LMW.choices);
     var info = LMW.choices[selectedIcon];
+    info['selectedIcon'] = selectedIcon;
 
-    var link = document.createElement("a");
-    if (info.mainimg) {
+    //var link = document.createElement("a");
+    /*if (info.mainimg) {
         var img = document.createElement("img");
 
         var path = "assets/" + selectedIcon + "/" + info.mainimg;
@@ -153,11 +176,20 @@ LMW.portfolio = (function(window, document, $, undefined) {
     text.appendChild(ext_text);
     piecewrapper.appendChild(text);
 
-    document.getElementById('portfolio-section').appendChild(piecewrapper);
+    document.getElementById('portfolio-section').appendChild(piecewrapper);*/
+    Handlebars.registerHelper('canvas_width', function() {
+      var canvas_width = this.more_imgs.length*20 + 50;
+      return canvas_width;
+    });
+
+    var source = $('#portfolio_piece_template').html();
+    var template = Handlebars.compile(source);
+
+    $('#portfolio-section').append(template(info));
     window.mySwipe = [];
     addSwiper(selectedIcon);
-    if (more_imgs.length > 0 ) {
-      drawCircles(selectedIcon); 
+    if (info.more_imgs.length > 0 ) {
+      //drawCircles(selectedIcon); 
     }
   }
 
@@ -182,7 +214,6 @@ LMW.portfolio = (function(window, document, $, undefined) {
 
     var new_spot = (arrow_dir == 'l') ? curr_img_index - 1 : curr_img_index + 1; 
 
-    //alert(new_spot);
     if (new_spot >= 0 && new_spot < list_of_imgs.length) {    
       list_of_imgs[curr_img_index].classList.remove('desktop-shown');
       list_of_imgs[curr_img_index].classList.add('desktop_hidden');
@@ -275,7 +306,7 @@ LMW.portfolio = (function(window, document, $, undefined) {
       auto: 0,
       continuous: false,
       callback: function(index, slides) {
-        updateCircles(id);
+        //updateCircles(id);
       }
     });
   }
@@ -300,10 +331,10 @@ LMW.portfolio = (function(window, document, $, undefined) {
       document.getElementById('portfolio_content').setAttribute('data-current_section',chosen);
 
       var data = {
-          'web': ['mysite','mastermind','picksix','paramount'],
+          'web': ['mysite','ifeis','mastermind','picksix'],
           'print': ['bandlink','sixword','futura'],
           '3D': ['spacecruiser','drink','lego'],
-          'drawing': ['figure','technical','character']
+          'drawing': ['figure','dress','technical','character']
       }       
 
       document.getElementById(chosen).classList.add("selected");
@@ -353,6 +384,7 @@ LMW.portfolio = (function(window, document, $, undefined) {
 
     setup: function() {
 
+          //loadThumbnails();
           loadPortfolioData();
           var portfolio_contents = new Array({name:"web",amt:"4",on:"true"}, 
                                              {name:"print",amt:"3",on:"false"}, 
@@ -380,7 +412,7 @@ LMW.portfolio = (function(window, document, $, undefined) {
           $("div#portfolio-categories").on('click','a',function() {LMW.portfolio.changeSelectedSection(this.id); this.classList.add("selected"); });
 
           //add click handlers for the portfolio thumbnails - desktop only
-          $("div#thumbnails").on('click','img',function() { 
+          $("#thumbnail_wrapper").on('click','img',function() { 
             $("div#portfolio-section").empty();
 
             var name = this.id.replace('_icon','');

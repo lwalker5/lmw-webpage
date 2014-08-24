@@ -4,26 +4,11 @@ if (typeof(LMW) == 'undefined') LMW = {};
 LMW.navigation = (function(window, document, $, undefined) {
 
   function resetNavigation(){
-
-    var child_list = document.getElementById('navigation').children;
-       
-    for (var index = 0; index < child_list.length; index++)
-      {
-        var child = child_list[index];
-
-        if (child.classList.contains('on')) { child.classList.remove('on'); }
-      }
-
-      var child_list_content = document.getElementById('content').children;
-
-      for (var index = 0; index < child_list_content.length; index++)
-      {
-        var child = child_list_content[index];
-        if (child.classList.contains('hidden') !== true) { child.classList.add('hidden'); }
-      }
+    var child_list = $('nav ul li').toggleClass('on',false);
+    var child_list_content = $('.content > div').toggleClass('hidden',true);
   }
 
-  function addCarousel() {
+  /*function addCarousel() {
     $('#thumbnails').addClass('on');
     $(".jMyCarousel").jMyCarousel({  
         visible: '10',
@@ -32,6 +17,28 @@ LMW.navigation = (function(window, document, $, undefined) {
         evtStart: 'mousedown',
         evtStop: 'mouseup'
     }); 
+  }*/
+
+  function addSlick() {
+    $('#thumbnails').addClass('on');
+    /*$('.add_slick').slick({
+      infinite: true,
+      slide: 'li',
+      slidesToShow:10,
+      speed: 500,
+      swipe: true,
+    });*/
+    var portfolio_swiper = $("#thumbnails").swiper({
+      mode:'horizontal',
+      slidesPerView: 10,
+      initialSlide: 0,
+      centeredSlides: false,
+      loop: true,
+      watchActiveIndex: true
+    });
+
+    $('#left_swipe_arrow').on('click', function() { portfolio_swiper.swipePrev(); });
+    $('#right_swipe_arrow').on('click', function() { portfolio_swiper.swipeNext(); });
   }
 
   //Updating content for selected section
@@ -56,7 +63,7 @@ LMW.navigation = (function(window, document, $, undefined) {
     if (!is_mobile) {
       if (element_id == "portfolio")
       {
-        $("#content").css({"margin-top":"5em"});
+        $("#content").css({"margin-top":"3em"});
       }
 
       else { $("#content").css({"margin-top":"7em"}); }
@@ -69,7 +76,7 @@ LMW.navigation = (function(window, document, $, undefined) {
     if (element_id == "portfolio")
     {
       if ($("#thumbnails").hasClass("hidden")) { $("#thumbnails").removeClass("hidden"); }
-      if ( !( $("#thumbnails").hasClass("on") ) && $(window).width() > 961) { addCarousel(); }    
+      if ( !( $("#thumbnails").hasClass("on") ) && $(window).width() > 961) { addSlick(); }    
     }
    
     else
@@ -114,7 +121,7 @@ LMW.navigation = (function(window, document, $, undefined) {
   return {
     mobile: window.is_mobile,
     setupClickHandlers: function() {
-      $("#navigation").on('click','.nav-tab', function() { navigateTo(this.id,false); })    
+      $("nav ul li").on('click', function() { navigateTo(this.id,false); })    
       $(".needs_kerning").lettering();
       var contact = $("#mobile_heading").children().clone();
       contact[2].classList.remove('mobile-only');

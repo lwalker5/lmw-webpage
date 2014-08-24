@@ -1,6 +1,7 @@
 {
 
   "spacecruiser": {
+      "title": "spacecruiser",
       "mainimg": "SpaceCruiser",
       "maintitle": "Genesis leaves Earth on its maiden voyage",
       "more_imgs": [
@@ -15,34 +16,73 @@
                     { "name":"SpaceLandingA.png", "caption":"Scout ships and scientists set out to explore."}
                    ],
       "name": "Genesis II: Space Cruiser",
+      "type": "3D",
+      "classType": "label",
       "medium": "Design, sketching, rendering",
       "text": "The year is 2112 and the human race is looking to expand beyond Earth. Despite the mining of nearby asteroids and a multitude of space habitats, natural resources are running low and the population is ever expanding. A group of pioneers travels in search of hospitable planets, resources, and alien life. Their craft is the Genesis II, inspired by marine life, which is capable of acceleration to near light speed. It is equipped with a fleet of scout ships and four larger detachable vessels for more permanent landings. <br> <br> Renderings are done using marker, pastel, and some Photoshop airbrushing."
   },
+  "drink": {
+      "title": "drink",
+      "mainimg": "hotChocolate",
+      "maintitle": "Digital Hot Chocolate",
+      "more_imgs": [],
+      "name": "Digital Hot Chocolate",
+      "type": "3D",
+      "classType": "common",
+      "medium": "CG modeling/texturing",
+      "text": "The goal of the project was to create a CG model of a drink in a transparent container and make it look as real as possible. Using Maya and some reference photos I modeled and textured a glass of hot chocolate (with marshmellows and cinnamon of course!). The scenario: After a long day out in the snow, the viewer is invited to a delicious looking cup of warm cocoa as they look at the window at the mountainside. Rendered using mental ray."
+  },
+  "lego": {
+      "title": "lego",
+      "mainimg": "frolic",
+      "maintitle": "LEGO dude is frolicking through the fields!",
+      "more_imgs": [
+                  {"name":"bricksterbig.png", "caption":"Brickster is getting away with the pizza"},
+                  {"name":"orthos.png", "caption":"Profile view of the basic model"},
+                  {"name":"rigging.png", "caption":"Joint structure and animation controls"},
+                  {"name":"chef.png", "caption":"A proud chef serving the best pizza in Lego city"}
+                 ],
+      "name": "Digital LEGO characters",
+      "type": "3D",
+      "classType": "common",
+      "medium": "CG modeling/rigging/texturing",
+      "text": "Creation of digital lego characters to expand knowledge of Maya. Included modeling, rigging, and texturing to prepare characters for animation. It looks like brickster is getting away with the pizza!"
+  },
   "bandlink": {
+      "title": "bandlink",
       "mainimg": "BandlinkLogo",
       "maintitle": "Can you identify all the musical symbols?",
       "more_imgs": [{ "name":"BandlinkTee.png", "caption":"Bandlink Monogram featured on t-shirts"}],
       "name": "Bandlink Logo",
+      "type": "print",
+      "classType": "label",
       "medium": "Print/T-shirt",
       "text": "Bandlink is a music mentoring program where students from the Notre Dame band tutor young musicians. I designed a Bandlink t-shirt design that was sold to students, parents, and mentors of the program as well as a possible logo. The logo is composed of mainly musical symbols and the t-shirt is a monogram filled with words related to music that young musicians would identify with the blue and gold of ND." 
   },
   "irish": {
+      "name": "irish",
       "mainimg": "NationalsLogoFinal2",
       "maintitle": "Nationals Logo",
       "more_imgs": [],
       "name": "Irish Dance National Championships Logo",
+      "type": "print",
+      "classType": "common",
       "medium": "Print (clothing, programs, banners)",
       "text": "This design was for a contest hosted by Irish Dance Magazine for the logo of the Irish Dance Nationals 2012. As an irish dancer and competitor myself, I wanted to emphasize the words irish dance, the silhouttes of the dancers, and the host city of Chicago by referencing the Willis tower. The logo was selected as a top 10 winner."  
   },
   "sixword": {
+      "title": "sixword",
       "mainimg": "6word",
       "maintitle": "Reeses Peanut Butter Cup, anyone?",
       "more_imgs": [],
       "name": "Six Word Biography",
+      "type": "print",
+      "classType": "common",
       "medium": "10' by 10' poster", 
       "text": "The prompt: describe yourself in exactly six words. Obviously I like to eat as evidenced by the 400 point size EAT but right now you are probably thinking about Reeses Peanut Butter Cups which I did not mention at all. The colors may even have more of an impact than the words themselves. I love peanut butter and chocolate. (which also happens to be six words!)"
   },
   "futura": {
+      "title": "futura",
       "mainimg": "FuturaFront",
       "maintitle": "Front cover",
       "more_imgs": [
@@ -54,31 +94,13 @@
                     {"name":"FuturaBack.png", "caption":"Back cover"}
                    ],
       "name": "Type Specimen Book: Futura",
+      "type": "print",
+      "classType": "common",
       "medium": "5' by 7' informational book",
       "text": "This short book presents all you need to know about the typeface Futura. Included are history, characteristics, and notable usages. I chose a bright color scheme and a generally humorous writing style to appeal to a general audience. The book was researched, edited, designed, and bound by myself. As a result of this project I now love Futura.<span class='demotext'><a href='assets/futura/FullBook.pdf' target='_blank'>The Complete Book PDF</a></span>"
   },
-  "drink": {
-      "mainimg": "hotChocolate",
-      "maintitle": "Digital Hot Chocolate",
-      "more_imgs": [],
-      "name": "Digital Hot Chocolate",
-      "medium": "CG modeling/texturing",
-      "text": "The goal of the project was to create a CG model of a drink in a transparent container and make it look as real as possible. Using Maya and some reference photos I modeled and textured a glass of hot chocolate (with marshmellows and cinnamon of course!). The scenario: After a long day out in the snow, the viewer is invited to a delicious looking cup of warm cocoa as they look at the window at the mountainside. Rendered using mental ray."
-  },
-  "lego": {
-      "mainimg": "frolic",
-      "maintitle": "LEGO dude is frolicking through the fields!",
-      "more_imgs": [
-                  {"name":"bricksterbig.png", "caption":"Brickster is getting away with the pizza"},
-                  {"name":"orthos.png", "caption":"Profile view of the basic model"},
-                  {"name":"rigging.png", "caption":"Joint structure and animation controls"},
-                  {"name":"chef.png", "caption":"A proud chef serving the best pizza in Lego city"}
-                 ],
-      "name": "Digital LEGO characters",
-      "medium": "CG modeling/rigging/texturing",
-      "text": "Creation of digital lego characters to expand knowledge of Maya. Included modeling, rigging, and texturing to prepare characters for animation. It looks like brickster is getting away with the pizza!"
-  },
   "picksix": {
+      "title": "picksix",
       "mainimg": "PickSixExample",
       "maintitle": "Symbol set learning game",
       "more_imgs": [
@@ -89,10 +111,13 @@
         {"name":"PickSixProcessD.png", "caption":"Graphic components"}
        ],
       "name": "Pick Six",
+      "type": "web",
+      "classType": "common",
       "medium": "Interactive Web App (Design/HTML/CSS)",
       "text": "This interactive web app is a small game aimed at exploring symbol sets and the resulting positive and negative space. The user creates six symbols which are each composed of a 9 part tappable grid that changes the corresponding shape of the symbol. The game was designed specifically for iPad using HTML, CSS, and some jQuery. The bold color scheme emphasizes the symbols.<span class='demotext'><a href='assets/picksix/TheGame.html' target='_blank'>Check it out</a></span>" 
   },
   "mastermind": {
+      "title": "mastermind",
       "mainimg": "mastermindB",
       "maintitle": "A new game on easy mode",
       "more_imgs": [
@@ -100,18 +125,41 @@
                     {"name":"mastermindC.png", "caption":"Hard mode - up for the challenge?"}
                    ],
       "name": "Mastermind",
+      "type": "web",
+      "classType": "common",
       "medium": "Interactive Web App (Design and all coding)", 
       "text": "A redesigned version of the classic code breaking game, Mastermind, in which players attempt to figure out a color combination based on feedback from the code setter which in this case is the computer. Muted greys for the background put on emphasis on the focus of the game, brightly colored spheres. The web app is coded entirely in HTML, CSS, and Javascript and fits perfectly on an iPad screen. A Spotify widget is integrated so you can be inspired by some intense instrumental tunes while you play. See if you can beat the hard mode!<span class='demotext'><a href='assets/mastermind/index.html' target='_blank'>Play the game (Try it on an iPad!)</a></span><span class='demotext'><a href='https://github.com/lwalker5/mastermind' target='_blank'>GitHub</a></span>"
   },
+  "ifeis": {
+      "title": "ifeis",
+      "mainimg": "iFeisB",
+      "maintitle": "A list of your competitions for the year",
+      "more_imgs": [
+                    {"name":"iFeisC.png", "caption":"Add competitions to your list"},
+                    {"name":"iFeisD.png", "caption":"A page for each competition containing results, marks, and photos."},
+                    {"name":"iFeisE.png", "caption":"Add or edit your result."},
+                    {"name":"iFeisF.png", "caption": "Change the theme to suit your style or match your dress."},
+                    {"name":"iFeisGroup2.png", "caption":"Irish dancers love their bling!"}
+                   ],
+      "name": "iFeis",
+      "type": "web",
+      "classType": "common",
+      "medium": "Interactive Web App (Design and all coding)", 
+      "text": "<p>iFeis is a web app currently in development designed to help irish dancers track their results at competitions (called feises). At a feis, each dancer is given a paper with their marks. A misplaced pile of papers, along with a sometimes unmarked group of trophies, quickly gets difficult to keep track of. </p><p>iFeis provides a list of competitions and after each you can input your result, photos, and a snapsnot of your marks. Additionally, a profile contains your statistics and a checklist of personal goals. All this data can be shown to the dancer's teacher to give them a better idea of how they are progressing. For fun, The skin of the app can be changed to reflect the costume of the dancer if so desired.</p> The web app is constructed using the javascript framework Backbone. Other technologies used include Handlebars for templating, jQuery, and idangerous-swiper for touch capabilities. Check out the progress so far: <span class='demotext'><a href='assets/ifeis/index.html' target='_blank'>Demo</a></span><span class='demotext'><a href='https://github.com/lwalker5/ifeis' target='_blank'>GitHub</a></span>" 
+  },
   "mysite": {
+      "title": "mysite",
       "mainimg" : "SiteDemo",
       "maintitle" : "Newly redesigned to be responsive",
       "name": "This website",
+      "type": "web",
+      "classType": "label",
       "medium": "Interactive Portfolio (Design and coding)", 
       "more_imgs": [],
       "text": "This started off as a small school project and turned into a way for me to tackle new web technologies and brand myself online. It has been recently updated to be responsive which required a mobile/tablet redesign process and complete overhaul. Technologies used include HTML5 (incl. canvas), CSS, Javascript, JQuery, and JSON as well as the integration and modification of several third party scripts incluing swipe.js, lettering.js, and jMyCarousel."
   },
   "paramount": {
+      "title": "paramount",
       "mainimg": "MoldingA",
       "maintitle": "New manufacturing interface",
       "more_imgs": [
@@ -124,10 +172,28 @@
                     {"name":"MoldingA.png", "caption":"Status indicator - previously nonexistent"}
                    ],
       "name": "Manufacturing Control Interface",
+      "type": "web",
+      "classType": "common",
       "medium": "Interactive Web Prototype (UI/Design/HTML/CSS)", 
       "text": "A local vacuum forming plastic company in Indiana was in need of a new control interface for one of their machines. To eliminate readability problems, ease worker stress, and improve productivity my web design class explored an iPad interface. We first visited the company to gather research and then made interactive web app prototypes to present to workers that would potentially use the machines. This is my take on an interface redesign prototype for iPad. The white on dark improves readability and the streamlined process eliminates unnecessary steps and chances of error.<span class='demotext'><a href='assets/paramount/PresentationComplete.pdf' target='_blank'>View the presentation for the client</a></span><span class='demotext'><a href='https://github.com/lwalker5/control-interface-prototype.git' target='_blank'>GitHub</a></span>"
   },
+  "dress": {
+      "title": "dress",
+      "mainimg": "dressA",
+      "more_imgs": [
+                    {"name":"female1.png"},
+                    {"name":"female2.png"},
+                    {"name":"arm1.png"},
+                    {"name":"female3.png"}
+                   ],
+      "name": "Irish Dance Costume Design",
+      "type": "drawing",
+      "classType": "common",
+      "medium": "Sketching, Mock ups, Pattern, Fabric choice",
+      "text": "The design for my most recent irish dance costume."
+  },
   "figure": {
+      "title": "figure",
       "mainimg": "male1",
       "more_imgs": [
                     {"name":"female1.png"},
@@ -140,10 +206,13 @@
                     {"name":"female5.png"}
                    ],
       "name": "Figure Studies",
+      "type": "drawing",
+      "classType": "label",
       "medium": "Charcoal/Graphite 17' by 24'",
       "text": "Drawings of the figure both from life and slides with a focus on proportion and edge quality."
   },
   "technical": {
+      "title": "technical",
       "mainimg": "technical",
       "maintitle": "Hairdryer - color on color orthographic",
       "more_imgs": [
@@ -154,10 +223,13 @@
                     {"name":"technical6.png", "caption":"Point of reference graphite orthographic"}
                    ],
       "name": "Product Drawings",
+      "type": "drawing",
+      "classType": "common",
       "medium": "Sketching/Rendering",
       "text": "Technical drawings using a variety of rendering techniques and mediums including pencil, pen, sharpie, pastel, and marker. Samples from redesigns/studies of a drill, hairdryer, desktop speaker, space cruiser, and power tool."
   },
   "character": {
+      "title": "character",
       "mainimg": "Frodo",
       "maintitle": "Frodo Baggins of the Lord of the Rings",
       "more_imgs": [
@@ -167,6 +239,8 @@
                     {"name":"Merlin.png", "caption":"Merlin (Colin Moran) from the BBC series"}
                    ],
       "name": "Character Potraits",
+      "type": "drawing",
+      "classType": "common",
       "medium": "Graphite 14' by 17'",
       "text": "Potraits of movie characters and celebrities."
   }

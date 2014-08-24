@@ -1,87 +1,92 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!--[if gte IE 9]><!-->        
+<html>
+<!--<![endif]-->
+<!--[if lt IE 9]> 
+ <html class="old-ie"> 
+<![endif]-->
 <head>
+  <!--<script type="text/javascript" src="https://getfirebug.com/firebug-lite.js"></script>-->
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lindsay M Walker</title>
-<link href="assets/styles.css" rel="stylesheet" type="text/css" />
-<link href="assets/kerning.css" rel="stylesheet" type="text/css" />
+<meta name="description" content="Developer + Designer + Dancer
+The personal portfolio website for Lindsay M Walker, front end developer, Notre Dame graduate, and irish dancer." />
+<title>Lindsay M Walker : Developer + Designer + Dancer</title>
+<link href="css/styles.css" rel="stylesheet" type="text/css" />
+<link href="css/kerning.css" rel="stylesheet" type="text/css" />
+<link href="fonts/stylesheet.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="css/idangerous.swiper.css">
+<!--<link rel="stylesheet" type="text/css" href="jMyCarousel/jMyCarousel.css" /> -->
+<link rel="stylesheet" type="text/css" href="css/slick.css"/>
 
-<script src="assets/scripts/jquery-1.10.2.min.js"></script>
-<script src="assets/scripts/lettering.js"></script>
-<script type="text/javascript" src="assets/scripts/navigation.js"></script>
-<script type="text/javascript" src="assets/scripts/portfolioscript.js"></script>
-<script type="text/javascript" src="assets/scripts/main.js"></script>
-<script type="text/javascript" src="assets/Swipe-master/swipe.js"></script>
+<script src="scripts/jquery-1.10.2.min.js"></script>
+<script src="scripts/lettering.js"></script>
+<script src="scripts/main.js"></script>
+<script src="scripts/navigation.js"></script>
+<script src="scripts/portfolioscript.js"></script>
+<!--<script src="jMyCarousel/jMyCarousel.js"></script>-->
+<!-- savedfromurl=(0014)about:internet-->
+<!--[if lte IE 9]>
+  <script src="scripts/excanvas.js"></script>
+  <script src="scripts/classlist.js"></script>
+<![endif]-->
 
-<link href="assets/webfontkit-20120324-120456/stylesheet.css" rel="stylesheet" type="text/css" />
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-
-<script type="text/javascript">
-//Google Analytics
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-34231091-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.get
-  })();
+  ga('create', 'UA-34231091-1', 'lindsaymwalker.com');
+  ga('send', 'pageview');
 
 </script>
-
-<link rel="stylesheet" type="text/css" href="assets/jMyCarousel/jMyCarousel.css" /> 
-<script type="text/javascript" src="assets/jMyCarousel/jMyCarousel.js"></script>
 
 </head>
 
 <body>
+
+<script src="scripts/idangerous.swiper.js"></script>
+
 <div class="wrapper">
   <div class="main">
-    <img id="logo" src="assets/logo.png" class="desktop-only" alt="lmw logo"/>
-    <div class="intro mobile-only">
+    <img role="banner" src="assets/logo.png" class="desktop-only" alt="lmw logo"/>
+    <div id="mobile_heading" class="intro mobile-only">
       <h1 class="needs_kerning">lindsay m walker</h1>
       <h3>Developer + Designer + Dancer</h3>
       <ul class="contact-icons mobile-only">
-          <li id="email"><a href="mailto:lindsay.m.walker5@gmail.com"></a></li>
-          <li id="facebook"><a href="http://www.facebook.com/lindsay.walker.737"></a></li>
-          <li id="linkedin"><a href="http://www.linkedin.com/in/lindsaymwalker"></a></li>
-          <li id="twitter"><a href="http://www.twitter.com/LiNDsayW1004"></a></li>
-          <li id="github" class="no-margins"><a href="http://www.github.com/lwalker5"></a></li>
+          <li class="email"><a href="mailto:lindsay.m.walker5@gmail.com"></a></li>
+          <li class="facebook"><a href="http://www.facebook.com/lindsay.walker.737"></a></li>
+          <li class="linkedin"><a href="http://www.linkedin.com/in/lindsaymwalker"></a></li>
+          <li class="twitter"><a href="http://www.twitter.com/LiNDsayW1004"></a></li>
+          <li class="github no-margins"><a href="http://www.github.com/lwalker5"></a></li>
       </ul>
     </div>   
-    <div id="navigation">
-      <div id="aboutme" class="inline-block tabtext"><a>About Me</a></div>
-      <div id="resume" class="inline-block tabtext"><a>Resum&eacute;</a></div>
-      <div id="portfolio" class="inline-block tabtext"><a>Portfolio</a></div>
-      <div id="contact" class="desktop-only inline-block tabtext"><a>Contact</a></div>
-      <div id="bar" class="desktop-only"></div>
-    </div>
-    <div id="thumbnails" class="hidden inline-block desktop-only">
-      <div class="jMyCarousel">  
-        <ul>  
-            <li><img src="assets/icons/3DLabel.png" id="spacecruiser_icon" class="label" width="64" height="100" alt="space cruiser" data-category="3D"/></li>
-            <li><img src="assets/icons/cheficon.png" id="lego_icon" class="common" width="64" height="75" data-category="3D"></li>
-            <li><img src="assets/icons/drink.png" id="drink_icon" class="common" width="64" height="75" alt="hot chocolate" data-category="3D"/></li>
-            <li><img src="assets/icons/weblabel2.png" id="mysite_icon" class="label" width="64" height="100" alt="pick six" data-category="web"/></li>
-            <li><img src="assets/icons/mastermindicon.png" id="mastermind_icon" class="common" width="64" height="75" alt="my site" data-category="web"/></li>
-            <li><img src="assets/icons/picksix.png" id="picksix_icon" class="common" width="64" height="75" alt="mastermind" data-category="web"/></li>
-            <li><img src="assets/icons/paramounticon.png" id="paramount_icon" class="common" width="64" height="75" alt="paramount plastics" data-category="web"/></li>
-            <li><img src="assets/icons/PrintLabel.png" id="bandlink_icon" class="label" width="64" height="100" alt="bandlink" data-category="print"/></li>
-            <li><img src="assets/icons/FuturaIcon.png" id="futura_icon" class="common" width="64" height="75" alt="futura" data-category="print"/></li>
-            <li><img src="assets/icons/sixwordicon.png" id="sixword_icon" class="common" width="64" height="75" alt="six word bio" data-category="print"/></li>  
-            <li><img src="assets/icons/drawingLabel.png" id="figure_icon" class="label" width="64" height="100" alt="female drawings" data-category="drawing"/></li>
-            <li><img src="assets/icons/technical_icon.png" id="technical_icon" class="common" width="64" height="75" alt="technical drawings" data-category="drawing"/></li>
-            <li><img src="assets/icons/frodoicon.png" id="character_icon" class="common" width="64" height="75" alt="character portraits" data-category="drawing"/></li>
-        </ul>  
-      </div>     
+    <nav>
+      <ul>
+        <li id="aboutme" class="nav-tab"><a>About Me</a></li>
+        <li id="resume" class="nav-tab"><a>Resum&eacute;</a></li>
+        <li id="portfolio" class="nav-tab"><a>Portfolio</a></li>
+        <li id="contact" class="desktop-only nav-tab"><a>Contact</a></li>
+        <li id="bar" class="desktop-only"></li>
+      </ul>
+    </nav>
+    <script id="thumbnail_template" type="text/x-handlebars-template">
+      {{#each this}}
+      <li class="swiper-slide">
+        <img src="assets/icons/{{icon this}}.png" id={{icon this}} class={{classType}} width="64" height={{h this}} alt="space cruiser" data-category={{type}} />
+      </li>
+      {{/each}}
+    </script>
+    <div id="thumbnails" class="swiper-container picker hidden desktop-only">
+      <img id="left_swipe_arrow" class="arrow left" src="assets/left_arrow.png"/>
+      <ul id="thumbnail_wrapper" class="swiper-wrapper"></ul>    
+      <img id="right_swipe_arrow" class="arrow right" src="assets/right_arrow.png"/>
     </div>
     <div id="content" class="content" data-active-section="none">
       <div id="aboutme_content" class="about add-margins hidden">
         <div id="aboutheading" class="inline-block vert-align">
-          <img src="assets/Small_Lindsay.png" width="88px" height="90px" class="inline-block vert-align" alt="photo of Lindsay"/> 
+          <img src="assets/small_lindsay.png" width="88" height="90" class="inline-block vert-align" alt="photo of Lindsay"/> 
           <p class="inline-block vert-align">
             <span class="white_heading">Lindsay M Walker <br /></span> 
             <span class="bodytext">Univ. Notre Dame '12 <br />
@@ -94,7 +99,7 @@
           <p>
           Hello! I'm Lindsay and I'm a front end developer. You've probably noticed that I went to Notre Dame (but here it is again since ND grads love talking about it!) and studied computer science and design. Most recently, I interned at the award winning digital agency R/GA in NYC. For some of my work you can check out my portfolio and github.</p>
           <p>
-            I'd be leaving out a large part of my life if I didn't mention irish dance which has been my passion for the past 13 years. In 2013 I competed at the World Championships, my 7th Nationals, and my 11th regionals. Additionally, my costumes are my own designs. It truly takes blood, sweat, and tears and I wouldn't be the person I am today without my it. 
+            I'd be leaving out a large part of my life if I didn't mention irish dance which has been my passion for the past 14 years. In 2013 I competed at the World Championships, my 7th Nationals, and my 11th regionals. Additionally, my costumes are my own designs. It truly takes blood, sweat, and tears and I wouldn't be the person I am today without it. 
           </p>
           <p>
           Some other obsessions at the moment are peanut butter, the color turquoise, cats, attempting to eat large amounts of food for the fewest calories, film scores, and Game of Thrones. If you'd like to contact me you can send me an email at lindsay.m.walker5@gmail.com or visit my various social media accounts. I love tweets!
@@ -102,7 +107,7 @@
         </div>
       </div> 
       <div id="resume_content" class = "add-margins hidden">
-        <div class="resume left inline-block">
+        <div class="resume r-left inline-block">
             <div class="rsection" style="padding-top: 0;">
               <h2>Education</h2>
               <span class="rsubheading">University of Notre Dame '12:</span> 
@@ -114,24 +119,25 @@
             <div class="rsection"> 
               <h2>Skills</h2>
               <div class="skills">
-                <span class="rsubheading">Proficient</span>
-                HTML/CSS <br />
-                Javascript<br />
-                JQuery<br />
-                C/C++<br />
+                <span class="rsubheading">Front End</span>
+                HTML5 <br />
+                CSS3 + SASS, Compass <br/>
+                Javascript + jQuery, Backbone <br />
+                Templating (Handlebars)
               </div>
               <div class="skills"> 
                 <span class="rsubheading">Familiar</span>
-                MySQL<br />
-                PHP<br />
-                Python
+                PHP <br />
+                MySQL <br/>
+                C/C++ <br />
+                Python 
               </div>
               <div class="skills end-of-line">
                 <span class="rsubheading">Design</span>
-                Autodesk Maya<br />
                 Illustrator<br/>
                 InDesign<br/>
                 Photoshop<br />
+                Autodesk Maya<br />
                 Drawing/Sketching<br />
               </div>
             </div>
@@ -144,58 +150,102 @@
               <a class = "white_heading" href ="https://github.com/lwalker5" target="_blank">GitHub Profile</a>
             </div> 
         </div>
-        <div class="resume right inline-block">
+        <div class="resume r-right inline-block">
           <div class= "rsection">
             <h2>Experience</h2>
-            <div class = "r_exp_entry">
+            <div class = "r-exp-entry">
               <span class="rsubheading">R/GA Technology Internship</span>
               <span class="ritalic">June 2013-August 2013</span>
-              Assisted in the front-end development of responsive mobile and tablet solutions for financial services clients. Additionally, worked with a cross disciplinary team of other interns to plan and present our ideas for a crowd-sourced mobile application that would supplement a public transportation system.
+              <span class="rbody">
+                Assisted in the front end development of responsive mobile and tablet solutions for financial services clients. Additionally, worked with a cross disciplinary team of other interns to plan and present our ideas for a crowd-sourced mobile application that would supplement a public transportation system.
+              </span>
             </div>
-            <div class = "r_exp_entry">
+            <div class = "r-exp-entry">
               <span class="rsubheading">Competitive and Performance Irish Dance</span>
               <span class="ritalic">2000–Present</span>
-              Practices daily and attends multiple classes weekly to improve technique. Open championship level in competition. Attended the World Championships in March 2013, her seventh Nationals in July, and regionals in November. Performs regularly with the Inishfree School at local shows.
+              <span class="rbody">
+                Practices daily and attends multiple classes weekly to improve technique. Open championship level in competition. Attended the World Championships in March 2013, her seventh Nationals in July, and regionals in November. Performs regularly with the Inishfree School at local shows.
+              </span>
             </div>
-            <div class = "r_exp_entry">
+            <div class = "r-exp-entry">
               <span class="rsubheading">Visual Effects Teaching Assistant</span> 
               <span class="ritalic">January 2012–May 2012 </span>
-              Assisted the students in the 'Technical Concepts of Visual Effects' course with any problems they encountered. Major project areas included modeling, texturing, animation, and compositing.
+              <span class="rbody">
+                Assisted the students in the 'Technical Concepts of Visual Effects' course with any problems they encountered. Major project areas included modeling, texturing, animation, and compositing.
+              </span>
             </div>
-            <div class = "r_exp_entry">
+            <div class = "r-exp-entry">
               <span class="rsubheading">Residence Hall Mail Clerk</span> 
               <span class="ritalic">Fall 2010–May 2012</span>
-              Organized and distributed mail for Farley Hall at Notre Dame.
+              <span class="rbody">
+                Organized and distributed mail for Farley Hall at Notre Dame.
+              </span>
             </div>
-            <div class = "r_exp_entry last">
+            <div class = "r-exp-entry last">
               <span class="rsubheading">Notre Dame Marching and Concert Bands</span>
               <span class="ritalic">2008–2012</span>
-              Performed a new show weekly at football games and attended practice daily as a clarinetist. Four year recipient of the shamrock perfect attendance award. Toured with the concert band three summers to Europe, Brazil, and Canada.
+              <span class="rbody">
+                Performed a new show weekly at football games and attended practice daily as a clarinetist. Four year recipient of the shamrock perfect attendance award. Toured with the concert band three summers to Europe, Brazil, and Canada.
+              </span>
             </div>
           </div>    
         </div>
       </div>
       <div id="portfolio_content" class="portfolio hidden">
-        <div class="portfolio-header mobile-only">
-          <div id="categories" class="categories"></div>
-        </div>
-        <div id="portfolio_section">
+        <header class="portfolio-header mobile-only">
+          <div id="portfolio-categories" class="portfolio-categories">
+          </div>
+        </header>
+        <div id="portfolio-section">
         </div>
       </div>
       <div id="contact_content" class="intro contact desktop-only hidden">
-        <h1 class="needs_kerning">lindsay m walker</h1>
-        <h3>Developer + Designer + Dancer</h3>
-        <h3>lindsay.m.walker5@gmail.com</h3>
-        <ul class="contact-icons">
-          <li id="email"><a href="mailto:lindsay.m.walker5@gmail.comcom"></a></li>
-          <li id="facebook"><a href="http://www.facebook.com/lindsay.walker.737"></a></li>
-          <li id="linkedin"><a href="http://www.linkedin.com/in/lindsaymwalker"></a></li>
-          <li id="twitter"><a href="http://www.twitter.com/LiNDsayW1004"></a></li>
-          <li id="github" class="no-margins"><a href="http://www.github.com/lwalker5"></a></li>
-        </ul>
       </div>
     </div> 
   </div>
 </div>
+<script async type="text/javascript" src="swipe-master/swipe.js"></script>
+<script type="text/javascript" src="slick/slick.js"></script>
+<script src="scripts/handlebars-v1.3.0.js"></script>
+<script id="portfolio_piece_template" type="text/x-handlebars-template">
+<div class="pieceshell">
+  <section class="imgshell inline-block {{selectedIcon}}">
+    <header class="headershell inline-block one-column-only">
+      <span class="name" id="pname">{{name}}</span>
+      <span class="pmedium">{{medium}}</span>
+    </header>
+    <div class="swipe" id="{{selectedIcon}}">
+      <div class="swipe-wrap">
+        <figure class="img_and_cap desktop-shown">
+          <div class="piece">
+            <img src="assets/{{selectedIcon}}/{{mainimg}}.png" />
+          </div>
+          <figcaption class="cap-italic caption">{{maintitle}}</figcaption>
+        </figure>
+        {{#each more_imgs}}
+        <figure class="img_and_cap desktop-hidden">
+          <div class="piece">
+            <img src="assets/{{../selectedIcon}}/{{name}}" />
+          </div>
+          <figcaption class="cap-italic caption">{{caption}}</figcaption>
+        </figure>
+        {{/each}}
+      </div>
+      <img class="arrow" id="l" src="assets/left_arrow.png"/>
+      <img class="arrow" id="r" src="assets/right_arrow.png"/>
+    </div>
+    <canvas id="{{selectedIcon}}canvas" data-num_imgs = "{{more_imgs.length}}" data-num_curr_img = "0" width = "{{canvas_width}}" height = "20">
+  </section>
+  <section class="textshell inline-block">
+    <header class="headershell inline-block two-column-only">
+      <span class="name" id="pname">{{name}}</span>
+      <span class="pmedium">{{medium}}</span>
+    </header>
+    <div class="pieceinfo resume">
+      {{{text}}}
+    </div>
+  </section>
+</div>
+</script>
 </body>
 </html>
