@@ -14,17 +14,7 @@ The personal portfolio website for Lindsay M Walker, front end developer, Notre 
 <title>Lindsay M Walker : Developer + Designer + Dancer</title>
 <link href="css/styles.css" rel="stylesheet" type="text/css" />
 <link href="css/kerning.css" rel="stylesheet" type="text/css" />
-<link href="fonts/stylesheet.css" rel="stylesheet" type="text/css" />
-<link rel="stylesheet" href="css/idangerous.swiper.css">
-<!--<link rel="stylesheet" type="text/css" href="jMyCarousel/jMyCarousel.css" /> -->
-<link rel="stylesheet" type="text/css" href="css/slick.css"/>
-
-<script src="scripts/jquery-1.10.2.min.js"></script>
-<script src="scripts/lettering.js"></script>
-<script src="scripts/main.js"></script>
-<script src="scripts/navigation.js"></script>
-<script src="scripts/portfolioscript.js"></script>
-<!--<script src="jMyCarousel/jMyCarousel.js"></script>-->
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500,700' rel='stylesheet' type='text/css'>
 <!-- savedfromurl=(0014)about:internet-->
 <!--[if lte IE 9]>
   <script src="scripts/excanvas.js"></script>
@@ -45,8 +35,6 @@ The personal portfolio website for Lindsay M Walker, front end developer, Notre 
 </head>
 
 <body>
-
-<script src="scripts/idangerous.swiper.js"></script>
 
 <div class="wrapper">
   <div class="main">
@@ -97,12 +85,12 @@ The personal portfolio website for Lindsay M Walker, front end developer, Notre 
         </div>
         <div id="abouttext" class="inline-block blue-line">
           <p>
-          Hello! I'm Lindsay and I'm a front end developer. You've probably noticed that I went to Notre Dame (but here it is again since ND grads love talking about it!) and studied computer science and design. Most recently, I interned at the award winning digital agency R/GA in NYC. For some of my work you can check out my portfolio and github.</p>
+          Hello! I'm Lindsay and I'm a front end developer. You've probably noticed that I went to Notre Dame (but here it is again since ND grads love talking about it!) and studied computer science and design. Last year I interned at award winning digital agency R/GA in NYC and recently I've been working on a web application that helps irish dancers track their results at competitions. Check out my portfolio and github to see some of my work.</p>
           <p>
-            I'd be leaving out a large part of my life if I didn't mention irish dance which has been my passion for the past 14 years. In 2013 I competed at the World Championships, my 7th Nationals, and my 11th regionals. Additionally, my costumes are my own designs. It truly takes blood, sweat, and tears and I wouldn't be the person I am today without it. 
+          Speaking of irish dance, I'd be leaving out a large part of my life if I didn't mention my own personal involvement. It has been my passion for the past 14 years. I annually compete at regionals, have been to Nationals 7 times, and attended the World Championships on a team in 2013. Additionally, my costumes are my own designs. It truly takes blood, sweat, and tears and I wouldn't be the person I am today without it. 
           </p>
           <p>
-          Some other obsessions at the moment are peanut butter, the color turquoise, cats, attempting to eat large amounts of food for the fewest calories, film scores, and Game of Thrones. If you'd like to contact me you can send me an email at lindsay.m.walker5@gmail.com or visit my various social media accounts. I love tweets!
+          Some other obsessions at the moment are peanut butter, the color turquoise, cats, attempting to eat large amounts of food for the fewest calories, film scores, keeping up my streak on Duolingo, and Game of Thrones. If you'd like to contact me you can send me an email at lindsay.m.walker5@gmail.com or visit my social media accounts. I love tweets!
           </p>
         </div>
       </div> 
@@ -118,11 +106,10 @@ The personal portfolio website for Lindsay M Walker, front end developer, Notre 
             </div>
             <div class="rsection"> 
               <h2>Skills</h2>
-              <div class="skills">
+              <div class="skills first">
                 <span class="rsubheading">Front End</span>
-                HTML5 <br />
-                CSS3 + SASS, Compass <br/>
-                Javascript + jQuery, Backbone <br />
+                HTML5, CSS3 (SASS, Compass) <br/>
+                Javascript (jQuery, Backbone) <br />
                 Templating (Handlebars)
               </div>
               <div class="skills"> 
@@ -164,7 +151,7 @@ The personal portfolio website for Lindsay M Walker, front end developer, Notre 
               <span class="rsubheading">Competitive and Performance Irish Dance</span>
               <span class="ritalic">2000–Present</span>
               <span class="rbody">
-                Practices daily and attends multiple classes weekly to improve technique. Open championship level in competition. Attended the World Championships in March 2013, her seventh Nationals in July, and regionals in November. Performs regularly with the Inishfree School at local shows.
+              Practices daily and attends multiple classes weekly to improve technique. Open championship level in competition; annually attends the North American Nationals and Mid-Atlantic Regionals. Additionally, designs her own costumes.
               </span>
             </div>
             <div class = "r-exp-entry">
@@ -204,9 +191,15 @@ The personal portfolio website for Lindsay M Walker, front end developer, Notre 
     </div> 
   </div>
 </div>
-<script async type="text/javascript" src="swipe-master/swipe.js"></script>
-<script type="text/javascript" src="slick/slick.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<link rel="stylesheet" href="css/idangerous.swiper.css">
+<script src="scripts/idangerous.swiper.js"></script>
+<script src="scripts/lettering.js"></script>
+<script src="scripts/main.js"></script>
+<script src="scripts/navigation.js"></script>
+<script src="scripts/portfolioscript.js"></script>
 <script src="scripts/handlebars-v1.3.0.js"></script>
+
 <script id="portfolio_piece_template" type="text/x-handlebars-template">
 <div class="pieceshell">
   <section class="imgshell inline-block {{selectedIcon}}">
@@ -214,16 +207,16 @@ The personal portfolio website for Lindsay M Walker, front end developer, Notre 
       <span class="name" id="pname">{{name}}</span>
       <span class="pmedium">{{medium}}</span>
     </header>
-    <div class="swipe" id="{{selectedIcon}}">
-      <div class="swipe-wrap">
-        <figure class="img_and_cap desktop-shown">
+    <div class="swiper-container portfolio" id="{{selectedIcon}}">
+      <div class="swiper-wrapper">
+        <figure class="swiper-slide img_and_cap desktop-shown">
           <div class="piece">
             <img src="assets/{{selectedIcon}}/{{mainimg}}.png" />
           </div>
           <figcaption class="cap-italic caption">{{maintitle}}</figcaption>
         </figure>
         {{#each more_imgs}}
-        <figure class="img_and_cap desktop-hidden">
+        <figure class="swiper-slide img_and_cap desktop-hidden">
           <div class="piece">
             <img src="assets/{{../selectedIcon}}/{{name}}" />
           </div>
@@ -234,7 +227,7 @@ The personal portfolio website for Lindsay M Walker, front end developer, Notre 
       <img class="arrow" id="l" src="assets/left_arrow.png"/>
       <img class="arrow" id="r" src="assets/right_arrow.png"/>
     </div>
-    <canvas id="{{selectedIcon}}canvas" data-num_imgs = "{{more_imgs.length}}" data-num_curr_img = "0" width = "{{canvas_width}}" height = "20">
+    <div class="pagination" id="{{selectedIcon}}-pagination"></div>
   </section>
   <section class="textshell inline-block">
     <header class="headershell inline-block two-column-only">

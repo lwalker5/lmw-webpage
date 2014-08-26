@@ -136,7 +136,7 @@
       "maintitle": "A list of your competitions for the year",
       "more_imgs": [
                     {"name":"iFeisC.png", "caption":"Add competitions to your list"},
-                    {"name":"iFeisD.png", "caption":"A page for each competition containing results, marks, and photos."},
+                    {"name":"iFeisD.png", "caption":"Competition page: results, marks, and photos."},
                     {"name":"iFeisE.png", "caption":"Add or edit your result."},
                     {"name":"iFeisF.png", "caption": "Change the theme to suit your style or match your dress."},
                     {"name":"iFeisGroup2.png", "caption":"Irish dancers love their bling!"}
@@ -145,7 +145,7 @@
       "type": "web",
       "classType": "common",
       "medium": "Interactive Web App (Design and all coding)", 
-      "text": "<p>iFeis is a web app currently in development designed to help irish dancers track their results at competitions (called feises). At a feis, each dancer is given a paper with their marks. A misplaced pile of papers, along with a sometimes unmarked group of trophies, quickly gets difficult to keep track of. </p><p>iFeis provides a list of competitions and after each you can input your result, photos, and a snapsnot of your marks. Additionally, a profile contains your statistics and a checklist of personal goals. All this data can be shown to the dancer's teacher to give them a better idea of how they are progressing. For fun, The skin of the app can be changed to reflect the costume of the dancer if so desired.</p> The web app is constructed using the javascript framework Backbone. Other technologies used include Handlebars for templating, jQuery, and idangerous-swiper for touch capabilities. Check out the progress so far: <span class='demotext'><a href='assets/ifeis/index.html' target='_blank'>Demo</a></span><span class='demotext'><a href='https://github.com/lwalker5/ifeis' target='_blank'>GitHub</a></span>" 
+      "text": "<p>iFeis is a web app currently in development designed to help irish dancers track their results at competitions (called feises). At a feis, each dancer is given a paper with their marks. A misplaced pile of papers, along with a sometimes unmarked group of trophies, quickly gets difficult to keep track of. </p><p>iFeis provides a list of competitions and after each you can input your result, photos, and a snapsnot of your marks. Additionally, a profile contains your statistics and a checklist of personal goals. All this data can be shown to the dancer's teacher to give them a better idea of how they are progressing. For fun, The skin of the app can be changed to reflect the costume of the dancer if so desired.</p> The web app is constructed using the javascript framework Backbone. Other technologies used include Handlebars for templating, jQuery, and idangerous-swiper for touch capabilities. Check out the progress so far: <span id='ifeislink' class='demotext'><a href='assets/ifeis/index.html' target='_blank'>Demo (Best in chrome for now)</a></span><span class='demotext'><a href='https://github.com/lwalker5/ifeis' target='_blank'>GitHub</a></span>" 
   },
   "mysite": {
       "title": "mysite",
@@ -156,7 +156,7 @@
       "classType": "label",
       "medium": "Interactive Portfolio (Design and coding)", 
       "more_imgs": [],
-      "text": "This started off as a small school project and turned into a way for me to tackle new web technologies and brand myself online. It has been recently updated to be responsive which required a mobile/tablet redesign process and complete overhaul. Technologies used include HTML5 (incl. canvas), CSS, Javascript, JQuery, and JSON as well as the integration and modification of several third party scripts incluing swipe.js, lettering.js, and jMyCarousel."
+      "text": "This started off as a small school project and turned into a way for me to tackle new web technologies and brand myself online. It has been recently updated to be responsive which required a mobile/tablet redesign process and complete overhaul. Technologies used include HTML5, CSS, Javascript, JQuery, Handlebars and JSON as well as the integration and modification of several third party scripts incluing lettering.js, and idangerous swiper."
   },
   "paramount": {
       "title": "paramount",
@@ -180,13 +180,8 @@
   "dress": {
       "title": "dress",
       "mainimg": "dressA",
-      "more_imgs": [
-                    {"name":"female1.png"},
-                    {"name":"female2.png"},
-                    {"name":"arm1.png"},
-                    {"name":"female3.png"}
-                   ],
       "name": "Irish Dance Costume Design",
+      "maintitle": "The finished product - crystals being added",
       "type": "drawing",
       "classType": "common",
       "medium": "Sketching, Mock ups, Pattern, Fabric choice",

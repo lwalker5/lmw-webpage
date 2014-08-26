@@ -1,6 +1,14 @@
 @import url(reset.css);
 /*Media breakpoints*/
 /*Colors!*/
+/*$susy: (
+	columns: 10,
+	gutters: 2em/7em,
+	debug: (
+		image: show,
+		color: rgba(11,129,133,0.1),
+	) 
+);*/
 body {
   font: 62.5% Verdana, Arial, Helvetica, sans-serif;
   line-height: 1.4;
@@ -69,6 +77,26 @@ nav li {
 .end-of-line {
   margin-right: 0em !important; }
 
+.ibody {
+  color: #FFF;
+  font-size: 14px;
+  line-height: 22px; }
+
+.blueheading {
+  color: #1FAAA6;
+  font-family: 'Ubuntu',sans-serif;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 32px;
+  margin-left: 235px; }
+
+.pheading {
+  color: #FFF;
+  font-family: 'Ubuntu',sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  margin-left: 235px; }
+
 p {
   margin-bottom: 1em; }
 
@@ -79,18 +107,21 @@ p {
   display: none; }
 
 .white_heading {
-  font-family: 'UbuntuMedium';
+  font-family: 'Ubuntu',sans-serif;
+  font-weight: 500;
   font-size: 1.6em; }
 
 h1 {
-  font-family: "UbuntuBold", Helvetica, sans-serif;
-  font-weight: normal;
+  font-family: "Ubuntu", Helvetica, sans-serif;
+  font-weight: 700;
   color: #1faaa6; }
 
+.intro {
+  font-family: 'Ubuntu', sans-serif; }
 @media (max-width: 960px) {
   .intro {
     position: absolute;
-    top: 2em;
+    top: 1em;
     left: 2em;
     margin: 0;
     min-width: 279px; } }
@@ -102,19 +133,17 @@ h1 {
   margin: 0 auto;
   width: 281px; }
 .intro h1 {
-  line-height: 0.75em;
+  line-height: 1em;
   font-size: 3.1em;
-  margin-bottom: 0px;
-  font-weight: normal; }
+  margin-bottom: 0px; }
 @media (min-width: 961px) {
   .intro h1 {
     line-height: 1em; } }
 .old-ie .intro h1 {
   line-height: 1em; }
 .intro h3 {
-  font-family: "UbuntuMedium", Helvetica, sans-serif;
   font-size: 1.9em;
-  font-weight: normal;
+  font-weight: 500;
   margin-bottom: 0.4em; }
 @media (min-width: 961px) {
   .intro h3 {
@@ -138,6 +167,8 @@ nav {
   display: inline-block;
   height: 58px; }
 
+nav li {
+  font-family: 'Ubuntu', sans-serif; }
 @media (max-width: 960px) {
   nav li {
     width: 100% !important; } }
@@ -151,7 +182,7 @@ nav {
 @media (max-width: 960px) {
   nav li a {
     text-transform: uppercase;
-    font-family: 'UbuntuBold' !important;
+    font-weight: 700;
     font-size: 2em;
     line-height: 2.4em;
     width: 93%;
@@ -163,14 +194,14 @@ nav {
     font-size: 1.3em; } }
 @media (min-width: 961px) {
   nav li a {
-    font-family: 'UbuntuMedium';
+    font-weight: 500;
     font-size: 1.8em;
     padding-left: 0px;
     padding-top: 0.5em;
     display: block;
     text-align: center; } }
 .old-ie nav li a {
-  font-family: 'UbuntuMedium';
+  font-weight: 500;
   font-size: 1.8em;
   padding-left: 0px;
   padding-top: 0.5em;
@@ -206,7 +237,7 @@ nav li.on a:hover, nav li.on a:active, nav li.on a:focus {
 #thumbnails img.arrow {
   position: absolute;
   z-index: 5;
-  top: 25px; }
+  top: 32px; }
 #thumbnails img.arrow.left {
   left: 13px; }
 #thumbnails img.arrow.right {
@@ -222,9 +253,6 @@ nav li.on a:hover, nav li.on a:active, nav li.on a:focus {
 .common {
   padding-top: 25px; }
 
-.content {
-  overflow: hidden;
-  *zoom: 1; }
 @media (max-width: 960px) {
   .content {
     margin: 0em !important; } }
@@ -232,52 +260,42 @@ nav li.on a:hover, nav li.on a:active, nav li.on a:focus {
   .content {
     margin-top: 7em;
     display: inline-block;
-    width: 100%; } }
+    width: 100%;
+    max-height: 700px; } }
 .old-ie .content {
   margin-top: 7em;
   display: inline-block;
-  width: 100%; }
-
-#aboutme_content {
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: -moz-linear-gradient(left, rgba(11, 129, 133, 0.1), rgba(17, 198, 204, 0.1) 77.77778%, rgba(0, 0, 0, 0) 77.77778%), -moz-linear-gradient(top, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
-  background-image: -webkit-linear-gradient(left, rgba(11, 129, 133, 0.1), rgba(17, 198, 204, 0.1) 77.77778%, rgba(0, 0, 0, 0) 77.77778%), -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
-  background-image: linear-gradient(to right, rgba(11, 129, 133, 0.1), rgba(17, 198, 204, 0.1) 77.77778%, rgba(0, 0, 0, 0) 77.77778%), linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
-  background-size: 10.22727%, 100% 24px;
-  background-origin: content-box, border-box;
-  background-clip: content-box, border-box;
-  background-position: left top; }
-#aboutme_content:after {
-  content: " ";
-  display: block;
-  clear: both; }
+  width: 100%;
+  max-height: 700px; }
 
 #aboutheading {
-  display: inline-block;
-  width: 28.40909%;
-  margin-left: 20.45455%; }
+  margin: 0;
+  display: inline-block; }
 @media (min-width: 961px) {
   #aboutheading {
-    /*margin: 0 2em 0 18em;*/ } }
+    margin: 0 2em 0 18em; } }
 .old-ie #aboutheading {
-  /*margin: 0 2em 0 18em;*/ }
+  margin: 0 2em 0 18em; }
+#aboutheading img {
+  margin-right: 1.5em; }
 #aboutheading .bodytext {
   font-size: 1.4em;
-  font-family: 'UbuntuRegular'; }
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400; }
 
 #abouttext {
   line-height: 1.5;
   font-size: 1.3em;
-  width: 100%; }
+  margin: 1.5em 0em; }
 #abouttext p {
   display: inline-block; }
 @media (min-width: 961px) {
   #abouttext {
-    width: 38.63636%; } }
+    width: 49%;
+    margin: 0; } }
 .old-ie #abouttext {
-  width: 38.63636%; }
+  width: 49%;
+  margin: 0; }
 @media (max-device-width: 767px) and (max-device-height: 767px) and (orientation: landscape) {
   #abouttext {
     font-size: 0.8em; } }
@@ -346,8 +364,8 @@ nav li.on a:hover, nav li.on a:active, nav li.on a:focus {
   font-size: 1.5em;
   display: block; }
 .rsection h2 {
-  font-family: 'UbuntuMedium';
-  font-weight: normal;
+  font-family: 'Ubuntu';
+  font-weight: 500;
   font-size: 1.5em;
   margin-bottom: 0.8em; }
 .rsection img {
@@ -359,7 +377,8 @@ nav li.on a:hover, nav li.on a:active, nav li.on a:focus {
 
 .rsubheading {
   color: #1faaa6;
-  font-family: 'UbuntuBold';
+  font-family: 'Ubuntu';
+  font-weight: 700;
   font-size: 1.2em;
   display: block; }
 @media (min-width: 961px) {
@@ -378,15 +397,27 @@ nav li.on a:hover, nav li.on a:active, nav li.on a:focus {
     font-size: 1.6em; } }
 @media (min-width: 961px) {
   .skills {
-    margin-right: 2.5em; } }
+    margin-right: 1.7em; } }
 .old-ie .skills {
-  margin-right: 2.5em; }
+  margin-right: 1.7em; }
 .skills .rsubheading {
   display: block; }
 
+.skills.first {
+  margin-bottom: 0em;
+  display: inline-block; }
+@media (max-width: 342px) {
+  .skills.first {
+    display: block;
+    margin-bottom: 1.5em; } }
+
+@media (max-width: 342px) {
+  .skills.end-of-line {
+    margin-left: 1.5em; } }
+
 .r-exp-entry {
   padding-bottom: 2em; }
-.r-exp-entry .last {
+.r-exp-entry.last {
   padding-bottom: 0em; }
 
 .portfolio-header {
@@ -394,7 +425,8 @@ nav li.on a:hover, nav li.on a:active, nav li.on a:focus {
   background-color: #e2e2e2; }
 .portfolio-header a {
   font-size: 1.4em;
-  font-family: 'UbuntuBold';
+  font-family: 'Ubuntu';
+  font-weight: 700;
   padding-left: 7%;
   padding-right: 6%;
   color: #44392F;
@@ -413,7 +445,7 @@ nav li.on a:hover, nav li.on a:active, nav li.on a:focus {
     border-bottom: 1px solid #0B8185; } }
 
 .imgshell {
-  width: 50%; }
+  width: 49%; }
 @media (max-width: 960px) {
   .imgshell {
     overflow: hidden; } }
@@ -470,7 +502,8 @@ nav li.on a:hover, nav li.on a:active, nav li.on a:focus {
   font-size: 1.4em; }
 
 .name {
-  font-family: 'UbuntuMedium';
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
   font-size: 1.9em;
   line-height: 1.2em;
   display: block;
@@ -492,7 +525,8 @@ nav li.on a:hover, nav li.on a:active, nav li.on a:focus {
 .demotext {
   display: block;
   font-size: 1.2em;
-  font-family: 'UbuntuMedium';
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
   margin: 0.75em 0em 0 0; }
 @media (min-width: 961px) {
   .demotext {
@@ -514,7 +548,7 @@ canvas {
   cursor: pointer;
   position: relative;
   margin-bottom: -7em; }
-@media (max-width: 320px) {
+@media (max-width: 342px) {
   .arrow {
     display: none; } }
 
@@ -537,16 +571,16 @@ canvas {
   margin-top: 1em; }
 .contact-icons li {
   width: 43px;
-  margin-right: 12px;
+  margin-right: 13px;
   line-height: 0em;
   font-size: 0em;
   display: inline-block; }
 @media (min-width: 961px) {
   .contact-icons li {
-    margin-right: 10px;
+    margin-right: 13px;
     opacity: 0.9; } }
 .old-ie .contact-icons li {
-  margin-right: 10px;
+  margin-right: 13px;
   opacity: 0.9; }
 .contact-icons a {
   background-size: 43px 43px;
