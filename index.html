@@ -207,14 +207,18 @@ The personal portfolio website for Lindsay M Walker, front end developer, Notre 
           <div class="piece">
             <img src="assets/{{selectedIcon}}/{{mainimg}}.png" />
           </div>
+          {{#if maintitle}}
           <figcaption class="cap-italic caption">{{maintitle}}</figcaption>
+          {{/if}}
         </figure>
         {{#each more_imgs}}
         <figure class="swiper-slide img_and_cap desktop-hidden">
           <div class="piece">
             <img src="assets/{{../selectedIcon}}/{{name}}" />
           </div>
+          {{#if caption}}
           <figcaption class="cap-italic caption">{{caption}}</figcaption>
+          {{/if}}
         </figure>
         {{/each}}
       </div>

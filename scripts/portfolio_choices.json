@@ -145,7 +145,7 @@
       "type": "web",
       "classType": "common",
       "medium": "Interactive Web App (Design and all coding)", 
-      "text": "<p>iFeis is a web app currently in development designed to help irish dancers track their results at competitions (called feises). At a feis, each dancer is given a paper with their marks. A misplaced pile of papers, along with a sometimes unmarked group of trophies, quickly gets difficult to keep track of. </p><p>iFeis provides a list of competitions and after each you can input your result, photos, and a snapsnot of your marks. Additionally, a profile contains your statistics and a checklist of personal goals. All this data can be shown to the dancer's teacher to give them a better idea of how they are progressing. For fun, The skin of the app can be changed to reflect the costume of the dancer if so desired.</p> The web app is constructed using the javascript framework Backbone. Other technologies used include Handlebars for templating, jQuery, and idangerous-swiper for touch capabilities. Check out the progress so far: <span id='ifeislink' class='demotext'><a href='assets/ifeis/index.html' target='_blank'>Demo (For best results on iOS, add to home screen as web app)</a></span><span class='demotext'><a href='https://github.com/lwalker5/ifeis' target='_blank'>GitHub</a></span>" 
+      "text": "<p>iFeis is a web app currently in development designed to help irish dancers track their results at competitions (called feises). At a feis, each dancer is given a paper with their marks. A misplaced pile of papers, along with a sometimes unmarked group of trophies, quickly gets difficult to keep track of. </p><p>iFeis provides a list of competitions and after each you can input your result, photos, and a snapsnot of your marks. Additionally, a profile contains your statistics and a checklist of personal goals. All this data can be shown to the dancer's teacher to give them a better idea of how they are progressing. For fun, The skin of the app can be changed to reflect the costume of the dancer if so desired.</p> The web app is constructed using the javascript framework Backbone. Other technologies used include Handlebars for templating, jQuery, and idangerous-swiper for touch capabilities. Check out the progress so far: <span id='ifeislink' class='demotext'><a href='assets/ifeis/index.html' target='_blank'>Demo (For best results on iPhone, add to home screen as web app)</a></span><span class='demotext'><a href='https://github.com/lwalker5/ifeis' target='_blank'>GitHub</a></span>" 
   },
   "mysite": {
       "title": "mysite",
@@ -181,10 +181,11 @@
       "title": "dress",
       "mainimg": "dressA",
       "name": "Irish Dance Costume Design",
-      "maintitle": "The finished product - crystals being added",
+      "maintitle": "The finished product",
       "type": "drawing",
       "classType": "common",
       "medium": "Sketching, Mock ups, Pattern, Fabric choice",
+      "more_imgs": [],
       "text": "The design for my most recent irish dance costume."
   },
   "figure": {

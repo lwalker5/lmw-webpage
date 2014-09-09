@@ -17,6 +17,8 @@ LMW.navigation = (function(window, document, $, undefined) {
       initialSlide: 0,
       centeredSlides: false,
       loop: true,
+      preventLinks: true,
+      preventLinksPropagation: true,
       watchActiveIndex: true
     });
 
@@ -99,8 +101,12 @@ LMW.navigation = (function(window, document, $, undefined) {
     }
 
     $('.swiper-container.portfolio').each(function() {
+      console.log($(this));
       var h = $(this).find('img:last-of-type').height();
-      $(this).css('height',h+37);
+      var cap = $(this).find('figcaption');
+      var captionHeight = (cap.length >= 1) ? 37 : 0;
+      //$('#'+selectedIcon).css('height',h+parseInt(captionHeight));
+      $(this).css('height',h+parseInt(captionHeight));
     })
   });
 

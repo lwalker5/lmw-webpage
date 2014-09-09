@@ -60,7 +60,8 @@ LMW.portfolio = (function(window, document, $, undefined) {
 
     $('#'+selectedIcon+' img').load(function() {
       h = $('#'+selectedIcon+' img').height();
-      $('#'+selectedIcon).css('height',h+37);
+      var captionHeight = (info.maintitle) ? 37 : 0;
+      $('#'+selectedIcon).css('height',h+parseInt(captionHeight));
       $('#'+selectedIcon+'-pagination').css('width',(info.more_imgs.length+1)*20);
     });
     if (info.more_imgs.length >= 1) { addSwiper(selectedIcon); }
