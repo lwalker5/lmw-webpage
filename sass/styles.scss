@@ -1,10 +1,11 @@
-@charset "UTF-8";
+@charset "UTF-8"; 
 @import "compass";
 @import "breakpoint";
 @import "reset.css";
+@import "susy";
 
 /*Media breakpoints*/
-$mobile: max-width 320px;
+$mobile: max-width 342px;
 $mobile_landscape: (max-device-width 767px) (max-device-height 767px) (orientation landscape);
 $mid-range-and-below: max-width 960px;
 $desktop: 961px;
@@ -27,7 +28,7 @@ $light-gray: #E2E2E2;
 	}
 }
 
-@mixin mid-range {
+@mixin mid-range { 
 	@include breakpoint($mid-range-and-below) {
 		@content;
 	}
@@ -49,32 +50,24 @@ body {
 	margin: 0;
 	padding: 0;
 	color: #FFF;
+	::selection {
+		background : $teal;
+	}
 }
-
-a img { border: none; }
-a {
+ 
+a { 
 	cursor: pointer;
 	color: #FFF;
-}
-
-a:link { 
-	color: #FFF;
-	text-decoration: none; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
-}
-a:visited { text-decoration: none; }
-
-a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
 	text-decoration: none;
-	border-bottom-style:none;
-	color: $teal;
+	&:hover, &:active, &:focus { border-bottom-style: none; color: $teal; }
+	img { border: none; }
 }
 
 input:focus{ outline:none; }
 
-/* This fixed width container surrounds all other elements */
 .wrapper {
 	width: 100%;
-	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+	margin: 0 auto;
 	@include desktop{
 		width: 960px;
 	}
@@ -86,9 +79,12 @@ input:focus{ outline:none; }
 	@include desktop {
 		margin: 5.6em 3.6em 3.6em 3.6em; 
 	}
+
+	> img { float: left; display: inline-block; } //logo
 }
 
-.inline-block { display: inline-block; } 
+.inline-block { display: inline-block; }
+%inblock { display: inline-block; } 
 .vert-align { vertical-align: top; }
 .hidden { display: none !important; }
 .invisible { visibility: hidden;}
@@ -96,31 +92,52 @@ input:focus{ outline:none; }
 .no-margins { margin: 0 !important;}
 .end-of-line { margin-right: 0em !important; }
 
+.ibody{
+	color:#FFF;
+	font-size:14px;
+	line-height:22px;
+}
+	
+.blueheading{
+	color:#1FAAA6;
+	font-family: 'Ubuntu',sans-serif;
+	font-weight: 700;
+	font-size: 35px;
+	line-height: 32px;
+	margin-left:235px;
+}
+
+.pheading{
+	color:#FFF;
+	font-family: 'Ubuntu',sans-serif;
+	font-weight: 500;
+	font-size: 22px;
+	margin-left:235px;
+}
+
 p { margin-bottom: 1em; }
 
 .mobile-only {
-	@include desktop {
-		display: none;
-	}
+	@include desktop { display: none; }
 }
  
 .white_heading {
-	font-family: 'UbuntuMedium';
+	font-family: 'Ubuntu',sans-serif;
+	font-weight: 500;
 	font-size: 1.6em;
 }
 
-#logo { float: left; }
-
 h1 {
-	font-family: "UbuntuBold", Helvetica, sans-serif;
-	font-weight: normal;	
+	font-family: "Ubuntu", Helvetica, sans-serif;
+	font-weight: 700;	
 	color: $teal;
 }
 
 .intro {
+	font-family: 'Ubuntu', sans-serif;
 	@include mid-range {
 		position: absolute;
-		top: 2em;
+		top: 1em;
 		left: 2em;
 		margin: 0;
 		min-width: 279px;
@@ -132,19 +149,17 @@ h1 {
 	}
 
 	h1 {
-		line-height: 0.75em;
+		line-height: 1em;
 		font-size: 3.1em;
 		margin-bottom: 0px;
-		font-weight: normal;
 		@include desktop {
 			line-height: 1em;
 		}
 	}
 
 	h3 {
-		font-family: "UbuntuMedium", Helvetica, sans-serif;
 		font-size: 1.9em;
-		font-weight: normal;
+		font-weight: 500;
 		margin-bottom: 0.4em;
 		@include desktop {
 			margin-bottom: 0.1em;
@@ -152,7 +167,7 @@ h1 {
 	}	
 }	
 
-#navigation {
+nav {
 	width: 100%;
 	vertical-align: bottom;
 	
@@ -164,7 +179,9 @@ h1 {
 	}
 }
 
-.nav-tab {
+nav li {
+	font-family: 'Ubuntu', sans-serif;
+	@extend %inblock;
 	@include mid-range { width: 100% !important; }
 	@include desktop {
 		height: 47px; 
@@ -174,7 +191,7 @@ h1 {
 	a { 
 		@include mid-range {
 			text-transform: uppercase;
-			font-family: 'UbuntuBold' !important;
+			font-weight: 700;
 			font-size: 2em;
 			line-height: 2.4em;
 			width: 93%;
@@ -186,43 +203,48 @@ h1 {
 			font-size: 1.3em;
 		}
 		@include desktop {
-			font-family: 'UbuntuMedium';
+			font-weight: 500;
 			font-size:1.8em;
 			padding-left:0px;
 			padding-top: 0.5em;
 			display: block;
 			text-align: center;
 		}
+		&:visited { font-size:1.8em; padding-left: 0px; }
 	}
-
-	a:visited {
-		font-size:1.8em;
-		padding-left:0px;
-	}
-
 	&.on {
 		background-color: #0B8185;
 		@include desktop {
 			-moz-border-radius: 5px 5px 0px 0px;
 			border-radius: 7px 7px 0px 0px;
 		}
-		
+
 		a:hover, a:active, a:focus{
-			color: #FFF; 
+			color: #FFF;  
 		}
 	}	
 }
 
 #bar{
-	height:11px;
+	height:11px; 
 	//width: 431px;
 	background-image:url(../assets/bar.png); 
 	display: block;
 }
 
 #thumbnails{
-	width:873px;
-
+	width:900px; /*873*/
+	margin-top: 10px;
+	position: relative;
+	left: -10px;
+	display: inline-block;
+	img.arrow { 
+		position: absolute; 
+		z-index: 5;
+		top: 32px;
+		&.left { left: 13px; }
+		&.right { right: 13px; }
+	}
 	li:hover {
 	cursor: pointer;
 	}
@@ -231,40 +253,47 @@ h1 {
 .label, .common{
 	width:64px;
 	float:left;
-	margin-right: 25px;
+	margin: 0 13px;
 }
 
-.content {
+.common {
+	padding-top: 25px;
+}
+
+.content {	
 	@include mid-range {
-		margin: 0em !important;
+		margin: 0em !important; 
 	}
 	@include desktop {
 		margin-top: 7em;
 		display: inline-block;
 		width: 100%;
+		max-height: 700px;
+	}
+}
+
+#aboutheading {
+	margin: 0;
+	display: inline-block;
+	@include desktop { margin: 0 2em 0 18em; }
+	img { margin-right: 1.5em;}
+	.bodytext {
+		font-size:1.4em;
+		font-family: 'Ubuntu', sans-serif;
+		font-weight: 400;
 	}
 }
 
 #abouttext {
 	line-height: 1.5;
 	font-size: 1.3em;
-	width: auto;
 	margin: 1.5em 0em;
+	p {display: inline-block;}
 	@include desktop {
-		width: 47%;
+		width: 49%;
 		margin: 0;
 	}
 	@include mobile-landscape { font-size: 0.8em; }
-}
-
-#aboutheading {
-	margin: 0;
-	@include desktop { margin: 0 2em 0 18em; }
-	img { margin-right: 1.5em; }
-	.bodytext {
-		font-size:1.4em;
-		font-family: 'UbuntuRegular';
-	}
 }
 
 .resume {
@@ -283,17 +312,11 @@ h1 {
 		font-size: 1.1em;
 		font-style: italic;
 
-		@include mid-range {
-			line-height: 1.1em;
-		}
+		@include mid-range { line-height: 1.5em; }
 		@include desktop {
 			display: inline-block;
-			margin: 0 0 0 1em;
+			margin: 0 0 0.5em 1em;
 		}
-	}
-	.rbody {
-			display: block;
-			margin-top: 0.25em;
 	}
 
 	.r-left {
@@ -312,72 +335,56 @@ h1 {
 			.rsection { padding-top: 0; }
 		}
 	}
-//}
 
-.rsection {
-	padding: 1.5em 0;
-	display: block;
-	@include mid-range {
-		border-bottom: 1px solid #0B8185; 	
-	}
-	&.desktop-only { padding-bottom: 0em; }
-
-	h1 {
-		font-size: 1.5em;
-		display: block;
-	}
-
-	h2 {
-		font-family:'UbuntuMedium';
-		font-weight: normal;
-		font-size: 1.5em;
-		margin-bottom: 0.8em;
-	}
-
-	img {
-		vertical-align: middle;
-		margin-right: 1em;
-	}
-
-	.white_heading {
-		margin-right: 5em;
-		font-size: 1.3em;
-	}
-	}
-	.rsubheading{
-		color: $teal;
-		font-family:'UbuntuBold';
-		font-size:1.2em;
-		display: block;
-		@include desktop{
-			display: inline;
+.resume {
+	> section {
+		padding: 0 0 1.5em 0;
+		section { 
+			padding: 0 0 1.5em 0; 
+			&.last {
+				@include mid-range { 
+					padding: 0;
+				}
+			}
+		}
+		//margin-right: 1em;
+		@include mid-range { 
+			border-bottom: 1px solid #0B8185; 
+			margin-bottom: 1em;
+		}
+		h2 {
+			font-family:'Ubuntu';
+			font-weight: 500;
+			font-size: 1.5em;
+			margin-bottom: 0.8em;
+		}
+		h3, .rsubheading {
+			padding-bottom: 0.5em;
+			color: $teal;
+			font-family:'Ubuntu';
+			font-weight: 700;
+			font-size:1.2em;
+		}
+		img {
+			vertical-align: middle;
+			margin-right: 1em;
+		}
+		.white_heading {
+			margin-right: 5em;
+			font-size: 1.3em;
 		}
 	}
 
-	.skills {
-		margin-right: 1em;
-		display: inline-block;
-		vertical-align: top;
-		width: auto;
 
-		@include mobile-landscape { font-size: 1.6em; }
-		@include desktop { margin-right: 2.5em; }
-		.rsubheading { display: block; }
-	}
-
-	.r-exp-entry {
-		padding-bottom: 2em;
-
-		.last{ padding-bottom: 0em; }
-	}
-//end of resection
+}
 
 .portfolio-header {
 	margin: 0em 0em 2em 0em;
 	background-color: $light-gray;
 	a {
 		font-size: 1.4em;
-		font-family: 'UbuntuBold';
+		font-family: 'Ubuntu';
+		font-weight: 700;
 		padding-left: 7%;
 		padding-right: 6%;
 		color: #44392F;
@@ -399,7 +406,7 @@ h1 {
 	}
 }
 	.imgshell {
-		width: 50%;
+		width: 49%;
 		@include mid-range {
 			overflow: hidden;
 		}
@@ -433,7 +440,7 @@ h1 {
   position: relative;
 }
 
-.swipe-wrap > div {
+.swipe-wrap > figure {
   float:left;
   width:100%;
   position: relative;
@@ -458,7 +465,8 @@ h1 {
 
 .textshell {}
 	.name {
-		font-family: 'UbuntuMedium';
+		font-family: 'Ubuntu', sans-serif;
+		font-weight: 500;
 		font-size: 1.9em;
 		line-height: 1.2em;
 		display: block;
@@ -480,7 +488,8 @@ h1 {
 	.demotext {
 		display: block;
 		font-size: 1.2em;
-		font-family: 'UbuntuMedium';
+		font-family: 'Ubuntu', sans-serif;
+		font-weight: 500;
 		margin: 0.75em 0em 0 0;
 		@include desktop {
 			font-size: 1.3em;
@@ -524,12 +533,12 @@ canvas {
 
 	li {
 		width: 43px;
-		margin-right: 12px;
+		margin-right: 13px;
 		line-height: 0em;
 		font-size: 0em;
 		display: inline-block;	
 		@include desktop {
-			margin-right: 10px;
+			margin-right: 13px;
 			opacity: 0.9;	
 		}
 	}

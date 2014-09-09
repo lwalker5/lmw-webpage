@@ -35,7 +35,6 @@
          url('ubuntu-l-webfont.svg#UbuntuLight') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
@@ -111,24 +110,4 @@
 	line-height:auto;
 }*/
 
-.ibody{
-	color:#FFF;
-	font-size:14px;
-	line-height:22px;
-}
-	
-.blueheading{
-	color:#1FAAA6;
-	font-family: 'UbuntuBold';
-	font-size: 35px;
-	line-height: 32px;
-	margin-left:235px;
-}
-
-.pheading{
-	color:#FFF;
-	font-family: 'UbuntuMedium';
-	font-size: 22px;
-	margin-left:235px;
-}
 	

@@ -1,14 +1,6 @@
 @import url(reset.css);
 /*Media breakpoints*/
 /*Colors!*/
-/*$susy: (
-	columns: 10,
-	gutters: 2em/7em,
-	debug: (
-		image: show,
-		color: rgba(11,129,133,0.1),
-	) 
-);*/
 body {
   font: 62.5% Verdana, Arial, Helvetica, sans-serif;
   line-height: 1.4;
@@ -315,18 +307,14 @@ nav li.on a:hover, nav li.on a:active, nav li.on a:focus {
   font-style: italic; }
 @media (max-width: 960px) {
   .ritalic {
-    line-height: 1.1em; } }
+    line-height: 1.5em; } }
 @media (min-width: 961px) {
   .ritalic {
     display: inline-block;
-    margin: 0 0 0 1em; } }
+    margin: 0 0 0.5em 1em; } }
 .old-ie .ritalic {
   display: inline-block;
-  margin: 0 0 0 1em; }
-
-.rbody {
-  display: block;
-  margin-top: 0.25em; }
+  margin: 0 0 0.5em 1em; }
 
 .r-left {
   width: 100%; }
@@ -352,73 +340,34 @@ nav li.on a:hover, nav li.on a:active, nav li.on a:focus {
 .old-ie .r-right .rsection {
   padding-top: 0; }
 
-.rsection {
-  padding: 1.5em 0;
-  display: block; }
+.resume > section {
+  padding: 0 0 1.5em 0; }
+.resume > section section {
+  padding: 0 0 1.5em 0; }
 @media (max-width: 960px) {
-  .rsection {
-    border-bottom: 1px solid #0B8185; } }
-.rsection.desktop-only {
-  padding-bottom: 0em; }
-.rsection h1 {
-  font-size: 1.5em;
-  display: block; }
-.rsection h2 {
+  .resume > section section.last {
+    padding: 0; } }
+@media (max-width: 960px) {
+  .resume > section {
+    border-bottom: 1px solid #0B8185;
+    margin-bottom: 1em; } }
+.resume > section h2 {
   font-family: 'Ubuntu';
   font-weight: 500;
   font-size: 1.5em;
   margin-bottom: 0.8em; }
-.rsection img {
-  vertical-align: middle;
-  margin-right: 1em; }
-.rsection .white_heading {
-  margin-right: 5em;
-  font-size: 1.3em; }
-
-.rsubheading {
+.resume > section h3, .resume > section .rsubheading {
+  padding-bottom: 0.5em;
   color: #1faaa6;
   font-family: 'Ubuntu';
   font-weight: 700;
-  font-size: 1.2em;
-  display: block; }
-@media (min-width: 961px) {
-  .rsubheading {
-    display: inline; } }
-.old-ie .rsubheading {
-  display: inline; }
-
-.skills {
-  margin-right: 1em;
-  display: inline-block;
-  vertical-align: top;
-  width: auto; }
-@media (max-device-width: 767px) and (max-device-height: 767px) and (orientation: landscape) {
-  .skills {
-    font-size: 1.6em; } }
-@media (min-width: 961px) {
-  .skills {
-    margin-right: 1.7em; } }
-.old-ie .skills {
-  margin-right: 1.7em; }
-.skills .rsubheading {
-  display: block; }
-
-.skills.first {
-  margin-bottom: 0em;
-  display: inline-block; }
-@media (max-width: 342px) {
-  .skills.first {
-    display: block;
-    margin-bottom: 1.5em; } }
-
-@media (max-width: 342px) {
-  .skills.end-of-line {
-    margin-left: 1.5em; } }
-
-.r-exp-entry {
-  padding-bottom: 2em; }
-.r-exp-entry.last {
-  padding-bottom: 0em; }
+  font-size: 1.2em; }
+.resume > section img {
+  vertical-align: middle;
+  margin-right: 1em; }
+.resume > section .white_heading {
+  margin-right: 5em;
+  font-size: 1.3em; }
 
 .portfolio-header {
   margin: 0em 0em 2em 0em;
