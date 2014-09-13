@@ -66,9 +66,9 @@ LMW.portfolio = (function(window, document, $, undefined) {
     });
     if (info.more_imgs.length >= 1) { addSwiper(selectedIcon); }
 
-    if (selectedIcon == 'ifeis' && is_mobile) {
+    /*if (selectedIcon == 'ifeis' && is_mobile) {
       $('#ifeislink a').attr('href','assets/ifeis/ifeisapp/');
-    }
+    }*/
   }
 
   function findCurrIndex(list_of_imgs) {
